@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"
+            className={`fixed top-0 left-0 w-full  z-[6] transition-all duration-300 ${isScrolled ? "bg-white/10 backdrop-blur-md shadow-md " : "bg-transparent"
                 }`}
         >
             <div className="flex justify-between items-center px-6 lg:mr-10 md:px-16 py-5">
@@ -44,7 +44,7 @@ const Navbar = () => {
 
             {/* Mobile Menu (Dropdown) */}
             {isOpen && (
-                <div className="md:hidden flex flex-col items-center gap-3 bg-white/90 p-4 shadow-lg text-black">
+                <div className="md:hidden flex flex-col  items-center gap-3 bg-blue-900/90 p-4 shadow-lg text-black">
                     <p>SCHEDULE</p>
                     <p>PRIZES</p>
                     <p>TRACKS</p>

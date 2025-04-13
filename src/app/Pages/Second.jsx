@@ -25,9 +25,17 @@ const Second = () => {
     return (
         <>
             <div className="relative w-full overflow-hidden hidden sm:block ">
-                <img src="/Group 81.png" alt="Background Element" className="w-full h-auto opacity-100 mt-50 relative z-10 " />
+                <div className="relative">
+                    <img src="/Group 81.png" alt="Background Element" className="w-full  opacity-100 mt-50 relative  z-4 " />
+                    <img src="/Rectangle 3.png" alt="Background Element" className="w-full absolute opacity-100 top-84 blur-[9px] z-4 " />
+
+                </div>
+
+
                 <div className="absolute top-97 left-1/2 transform -translate-x-1/2 text-white text-[170px] z-1 font-bold px-4 py-2 rounded hidden sm:block">
                     {formatTime(time)}
+
+
                 </div>
                 <div className="absolute z-10 top-77 left-156 text-red-500 font-light flex flex-row text-6xl space-x-36 items-center ">
                     HURRY UP!
@@ -39,14 +47,15 @@ const Second = () => {
                     <p>DAYS</p>
                     <p>HOURS</p>
                     <p>MINUTES</p>
+
                 </div>
                 <div className="lg:overflow-hidden">
-                    <img src="/rotate=0.svg" className="h-340 w-340 absolute -top-10 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-8" />
+                    <img src="/rotate=0.svg" className="h-340 w-340 absolute -top-14 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-8" />
                     <img src="/rotate=120.png" className="h-260 w-260 absolute top-20 left-1/2 transform -translate-x-1/2 z-2 spin-slow overflow-hidden mt-7" />
-                    <img src="/rotate=0.svg" className="h-240 w-240 absolute top-20 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-4" />
+                    <img src="/rotate=0.svg" className="h-240 w-240 absolute top-23 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-4" />
                 </div>
             </div>
-            <div className="relative w-full  block sm:hidden mb-49">
+            <div className="relative w-full  block sm:hidden mb-49 md:hidden">
                 <img src="/Group 81.png" alt="Background Element" className="w-full h-auto opacity-100 mt-50 relative z-10 hidden sm:block" />
                 <div className="absolute top-43 left-1/2 transform -translate-x-1/2 text-white text-5xl z-1 font-bold px-4 py-2 rounded ">
                     {formatTime(time)}
@@ -70,6 +79,7 @@ const Second = () => {
                     <img src="/rotate=0.svg" className="h-[320px] w-[320px] absolute top-5 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden " />
                 </div>
             </div>
+
         </>
     );
 };

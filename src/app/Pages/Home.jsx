@@ -6,6 +6,10 @@ import Navbar from "./Navbar";
 import Second from "./Second";
 import Third from "./Third";
 import Prizes from "./Prizes";
+import Last from "./Last";
+import Faqs from "./Faqs";
+import Cards from "./Cards";
+import Sponsors from "./Sponsors";
 
 
 
@@ -21,10 +25,10 @@ export default function Home() {
         }
     }, []);
     return (
-        <div className="relative flex flex-col gap-3 bg-blue-700 min-h-screen w-screen bg-cover bg-center"
+        <div className="relative flex flex-col gap-3  min-h-screen w-screen  bg-center"
 
             style={{
-                background: "linear-gradient(to bottom, #063254 0%, #004484 29%, #004484 71%, #01193D 96%)",
+                background: "linear-gradient(to bottom, #063254 0%, #004484 10%, #004484 61%, #01193D 86%)",
             }}
         >
             {/* 🎥 Background Video */}
@@ -52,7 +56,7 @@ export default function Home() {
             <img src="/Group 129.svg" alt="Background Element" className="w-10 absolute top-140 right-24 h-10 opacity-80 z-[2] hidden sm:block" />
 
             {/* Navbar */}
-            <div className="relative z-[3]">
+            <div className="relative z-[100]">
                 <Navbar />
             </div>
 
@@ -99,7 +103,8 @@ export default function Home() {
                         <img src="/Group 136.png" alt="Background Element" className="w-25 h-20 absolute top-98 right-110 opacity-80 hidden sm:block" />
                         <img src="/Group 56.png" alt="Background Element" className="w-20 h-15 absolute top-84 left-110 opacity-80 hidden sm:block" />
                         <img src="/Group 57.png" alt="Background Element" className="w-32 h-32 absolute top-84 right-30 mix-blend-difference opacity-80 hidden sm:block" />
-                        <img src="/Rectangle 3.png" className="absolute z-6 w-full right-0 opacity-100 h-60 top-87 hidden sm:block " />
+                        <img src="/Rectangle 3.png" className="absolute -z-0 w-full right-0 opacity-90 h-60 top-87 blur-[8px] hidden sm:block " />
+                        <img src="/Rectangle 3.png" className="absolute -z-0 w-full right-0 opacity-90 h-60 top-117 hidden sm:block blur-[8px] transform scale-y-[-1]" />
 
 
                         <p className="mt-128 bg-gradient-to-r from-[#A5FECB] to-[#A5FECB] via-[#92EFFD] text-transparent bg-clip-text text-xl font-ticketing mx-34 text-center opacity-100 absolute z-20 hidden sm:block">
@@ -113,7 +118,7 @@ export default function Home() {
                     <img
                         src="/Levitaing Ghost.svg"
                         alt="Levitating Ghost"
-                        className="w-135 h-130  top-40 animate-[wiggle_5s_ease-in-out_infinite] relative z-[3]"
+                        className="w-135 h-130  top-10 animate-[wiggle_5s_ease-in-out_infinite] relative z-[14]"
                     />
                 </div>
 
@@ -122,6 +127,12 @@ export default function Home() {
             <Second />
 
             <Third />
+            <Prizes />
+            <Cards />
+            <Sponsors />
+            <Faqs />
+            <Last />
+
 
 
         </div >

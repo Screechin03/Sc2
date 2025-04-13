@@ -55,6 +55,12 @@
   /* Moves slightly down */
 }
 
+.text-stroke-2 {
+  -webkit-text-stroke: 0.5px #93c5fd;
+  /* blue-300 hex code */
+}
+
+
 @layer utilities {
 
   /* Clockwise Rotation */
@@ -66,6 +72,8 @@
   .spin-slow {
     animation: spin-anticlockwise 15s linear infinite;
   }
+
+
 
   /* Keyframes for Clockwise Spin */
   @keyframes spin-clockwise {

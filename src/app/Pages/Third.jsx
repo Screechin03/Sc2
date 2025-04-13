@@ -22,7 +22,7 @@ const Third = () => {
 
     return (
         <>
-            <div className="relative flex flex-col items-center justify-center h-screen z-40 overflow-hidden mt-44 ">
+            <div className="relative flex flex-col items-center justify-center h-screen z-40  mt-44 ">
 
                 <motion.img
                     key={images[(currentIndex + 2) % images.length].id}
@@ -83,8 +83,11 @@ const Third = () => {
                 <img src="/cld (7).png" className="absolute z-11 w-108 left-0 opacity-80 top-123 blur-[1px]" />
                 <img src="/cld1 (3).png" className="absolute z-9 w-110 left-0 opacity-80 top-87  " />
                 <img src="/Cloud1.png" className="absolute z-3 w-70 right-0 opacity-100 top-107  blur-[1px]" />
-                <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-100 top-133  blur-[1px]" />
-                <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-100 top-113  blur-[2px]" />
+                <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-80 top-98  blur-[6px] " />
+
+                <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-100 top-173  blur-[14px] transform scale-y-[-1]" />
+
+
             </div>
         </>
     );
