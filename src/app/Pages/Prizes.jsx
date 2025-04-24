@@ -17,13 +17,42 @@ const Prizes = () => {
 
             </div>
             {/* Main Prizes Section */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10 pt-40">
-                <img
-                    src="/Group 193.png"
-                    alt="Trophy"
-                    className="w-300 h-120 relative z-[3]"
-                />
-            </div>
+            <div className="hidden md:flex flex-row items-center justify-center gap-10 pt-40">
+        <img
+          src="/Trophy 3.png"
+          alt="Trophy 3"
+          className="w-100 h-100 relative z-[3]"
+        />
+        <img
+          src="/Trophy 1.png"
+          alt="Trophy 1"
+          className="w-100 h-120 relative z-[3]"
+        />
+        <img
+          src="/trophy 2.png"
+          alt="Trophy 2"
+          className="w-100 h-100 relative z-[3]"
+        />
+      </div>
+
+      
+      <div className="flex flex-col items-center justify-center gap-10 pt-40 md:hidden">
+        <img
+          src="/Trophy 1.png"
+          alt="Trophy 1"
+          className="w-90 h-110 relative z-[3]"
+        />
+        <img
+          src="/trophy 2.png"
+          alt="Trophy 2"
+          className="w-100 h-120 relative z-[3]"
+        />
+        <img
+          src="/Trophy 3.png"
+          alt="Trophy 3"
+          className="w-100 h-120 relative z-[3]"
+        />
+      </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 pt-10">
                 <div className="relative">

@@ -44,7 +44,7 @@ const Cards = () => {
                 {cards.map((card, index) => (
                     <div
                         key={card.id}
-                        className={`relative lg:w-[180px] lg:h-[432px] md:w-[130px] md:h-[232px] shadow-lg transition-transform duration-500 transform perspective ${currentCardIndex === index
+                        className={`relative lg:w-[180px] lg:h-[432px] md:w-[130px] md:h-[232px] shadow-lg transition-transform duration-700 transform perspective ${currentCardIndex === index
                             ? "lg:scale-110 md:scale-110 rotate-y-180 lg:w-[387px] h-160 md:w-[200px] "
                             : currentCardIndex !== null
                                 ? "lg:scale-80 md:scale-60"
@@ -60,7 +60,7 @@ const Cards = () => {
                             {card.front}
                         </div>
                         <div
-                            className={`absolute w-full h-full flex items-center justify-center text-lg font-bold rotate-y-180 ${currentCardIndex === index ? "block" : "hidden"
+                            className={`absolute w-full h-full flex items-center justify-center text-lg font-bold rotate-y-180 transition-opacity duration-500 delay-200 ${currentCardIndex === index ? "block" : "hidden"
                                 }`}
                         >
                             {card.back}
