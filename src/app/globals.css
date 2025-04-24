@@ -31,6 +31,15 @@
   }
 }
 
+/* Fix for overflow issues */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
 .video-overlay {
   mix-blend-mode: lighten;
   /* Or 'screen' depending on the effect */

@@ -14,43 +14,65 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Function to handle smooth scrolling to sections
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            // Close mobile menu if open
+            if (isOpen) setIsOpen(false);
+
+            // Calculate position accounting for fixed header on desktop
+            const offset = window.innerWidth >= 768 ? 100 : 0;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+
     return (
         <nav
-            className={`fixed top-0 left-0 w-full  z-[6] transition-all duration-300 ${isScrolled ? "bg-white/10 backdrop-blur-md shadow-md " : "bg-transparent"
+            className={`w-full z-[999] transition-all duration-300 md:fixed md:top-0 md:left-0 ${isScrolled
+                ? "sm:bg-transparent md:bg-white/1 md:backdrop-blur-md"
+                : "bg-transparent"
                 }`}
         >
-            <div className="flex justify-between items-center px-6 lg:mr-10 md:px-16 py-5">
-                {/* Left Logo */}
-                <img src="/Vector.png" alt="Vector" className="h-13 w-auto mr-4" />
-
-                {/* Menu Items (Desktop) */}
-                <div className="hidden md:flex flex-1 justify-center space-x-20 items-center text-white">
-                    <p className="text-xl">SCHEDULE</p>
-                    <p className="text-xl">PRIZES</p>
-                    <p className="text-xl">TRACKS</p>
-                    <p className="text-xl">SPONSORS</p>
-                    <p className="text-xl">FAQs</p>
-                    <p className="text-xl">CONTACT US</p>
+            <div className="flex justify-between items-center px-6 md:px-4 lg:px-16 py-5">
+                <div className="flex items-center">
+                    <img src="/Vector.png" alt="Status Code 2" className="h-16 w-auto md:h-12 md:mr-3" />
+                </div>
+                <div className="hidden md:flex flex-1 justify-center items-center text-white">
+                    <div className="flex justify-between md:gap-3 lg:gap-8 w-full max-w-3xl">
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("schedule")}>SCHEDULE</p>
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("tracks")}>TRACKS</p>
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors")}>SPONSORS</p>
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("faqs")}>FAQs</p>
+                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("contact")}>CONTACT US</p>
+                    </div>
                 </div>
 
-                {/* Right Logo */}
-                <img src="/CLG logo.png" alt="CLG Logo" className="h-12 w-auto hidden md:block ml-4" />
+                <div className="hidden md:block">
+                    <img src="/CLG logo.png" alt="CLG Logo" className="h-10 md:h-10 lg:h-12 w-auto md:ml-2 lg:ml-4" />
+                </div>
 
-                {/* Mobile Menu Button */}
                 <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
                     <Menu size={32} />
                 </button>
             </div>
-
-            {/* Mobile Menu (Dropdown) */}
             {isOpen && (
-                <div className="md:hidden flex flex-col  items-center gap-3 bg-blue-900/90 p-4 shadow-lg text-black">
-                    <p>SCHEDULE</p>
-                    <p>PRIZES</p>
-                    <p>TRACKS</p>
-                    <p>SPONSORS</p>
-                    <p>FAQs</p>
-                    <p>CONTACT US</p>
+                <div className="md:hidden flex flex-col items-center gap-3 bg-blue-900/95 p-4 shadow-lg text-white absolute right-0 w-1/2 z-[999] rounded-lg">
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("schedule")}>SCHEDULE</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("tracks")}>TRACKS</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors")}>SPONSORS</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("faqs")}>FAQs</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("contact")}>CONTACT US</p>
                 </div>
             )}
         </nav>

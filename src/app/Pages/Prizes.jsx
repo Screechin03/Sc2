@@ -2,7 +2,7 @@ import React from "react";
 
 const Prizes = () => {
     return (
-        <div className="[;lo]  text-white py-10 flex flex-col justify-center items-center">
+        <div id="prizes" className="[;lo]  text-white py-10 flex flex-col justify-center items-center">
             <div className="relative ">
                 {/* Top outline layer */}
                 <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text  text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50">

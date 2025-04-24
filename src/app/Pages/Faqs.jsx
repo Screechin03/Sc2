@@ -43,17 +43,19 @@ const Faqs = () => {
     ];
 
     return (
-        <div
+        <div id="faqs"
             className="relative flex flex-col items-center min-h-screen w-screen bg-center text-white z-60"
         >
             {/* FAQ Header */}
             <div className="text-center">
                 <div className="relative ">
                     {/* Top outline layer */}
-                    <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text  text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50 tracking-wide">
+                    <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text  text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50 tracking-wide hidden sm:block">
                         F.A.Q.S
                     </span>
-
+                    <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text  text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50 tracking-tight block sm:hidden">
+                        F.A.Q.S
+                    </span>
                     {/* Middle filled layer */}
                     <span className="absolute z-80 transform -translate-x-1/2 translate-y-22  text-white font-ticket text-6xl font-semibold uppercase tracking-wide">
                         __FAQ__
@@ -62,7 +64,7 @@ const Faqs = () => {
 
                 </div>
             </div>
-            <div className="mt-60 w-full flex flex-col gap-4 pl-47">
+            <div className="mt-60 w-full flex flex-col gap-4 pl-47 hidden sm:block">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
@@ -78,6 +80,37 @@ const Faqs = () => {
                                     src="/Group 150.svg"
                                     alt={openIndex === index ? "Close" : "Open"}
                                     className="w-full h-full"
+                                />
+                            </button>
+
+
+                            <p className="flex-grow pl-4">{faq.question}</p>
+                        </div>
+
+                        {openIndex === index && (
+                            <p className="mt-2 pl-12 text-[#92DEFF] z-80">
+                                {faq.answer}
+                            </p>
+                        )}
+                    </div>
+                ))}
+            </div>
+            <div className="mt-60 w-full flex flex-col gap-2 pl-4 block sm:hidden">
+                {faqs.map((faq, index) => (
+                    <div
+                        key={index}
+                        className="flex flex-col text-lg  pb-2 tracking-tight font-ticketing justify-start"
+                    >
+                        <div className="flex items-center justify-between">
+                            <button
+                                className={`w-8 h-8 flex items-center justify-center transform transition-transform duration-300 ${openIndex === index ? "rotate-45" : "rotate-0"
+                                    }`}
+                                onClick={() => toggleFAQ(index)}
+                            >
+                                <img
+                                    src="/Group 150.svg"
+                                    alt={openIndex === index ? "Close" : "Open"}
+                                    className="w-7 h-7"
                                 />
                             </button>
 
