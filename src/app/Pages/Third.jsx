@@ -77,7 +77,7 @@ const Third = () => {
 
     return (
         <>
-            <div id="schedule" className="relative flex flex-col items-center justify-center h-screen z-40  lg:-mt-30 md:-mt-16">
+            <div id="schedule" className="relative flex flex-col items-center justify-center h-screen z-40  md:-mt-16">
                 <motion.div
                     key={`left-slide-${leftIndex}-${direction}`}
                     className="absolute lg:left-43 sm:left-43 lg:top-1/2 sm:top-1/2 z-8 md:left-22 transform -translate-y-1/2 opacity-100 w-114 blur-xs hidden sm:block"
