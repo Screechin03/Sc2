@@ -61,7 +61,7 @@ const Sponsors = () => {
           </div>
         </div>
   
-        <div id="sponsors" className="min-h-screen w-screen flex flex-col items-center z-30 gap-20 mt-50 mb-40 md:hidden">
+        <div id="sponsors2" className="min-h-screen w-screen flex flex-col items-center z-30 gap-20 mt-50 mb-40 md:hidden">
           <div className="relative mb-40 ">
             {/* Top outline layer */}
             <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text  text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50">

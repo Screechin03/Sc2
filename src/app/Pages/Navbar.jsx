@@ -70,7 +70,7 @@ const Navbar = () => {
                     <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("schedule")}>SCHEDULE</p>
                     <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
                     <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("tracks")}>TRACKS</p>
-                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors")}>SPONSORS</p>
+                    <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors2")}>SPONSORS</p>
                     <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("faqs")}>FAQs</p>
                     <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("contact")}>CONTACT US</p>
                 </div>

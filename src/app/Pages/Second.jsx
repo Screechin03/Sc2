@@ -26,7 +26,7 @@ const Second = () => {
         <>
             <div id="second" className="relative w-full overflow-hidden hidden sm:block -mb-50 md:mt-30 md:z-[90]">
 
-                <img src="/LandGroup.png" alt="Background Element" className="w-full opacity-100 mt-50 relative z-4" />
+                <img src="/Landgroup.png" alt="Background Element" className="w-full opacity-100 mt-50 relative z-4" />
 
                 <div className="absolute lg:top-97 md:top-76 lg:left-1/2 md:left-1/2 transform -translate-x-1/2 text-white md:text-[120px] lg:text-[170px] z-1 font-bold px-4 py-2 rounded hidden sm:block">
                     {formatTime(time)}

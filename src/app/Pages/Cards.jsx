@@ -12,12 +12,12 @@ const Cards = () => {
         { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
     ];
     const cards2 = [
-        { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile Tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile Tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
         { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/TEXT.svg" className="h-[662px] w-[487px]" /> },
-        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile Tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile Tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile Tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
     ];
 
     const handleNext = () => {

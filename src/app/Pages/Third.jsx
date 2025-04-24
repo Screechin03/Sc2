@@ -212,8 +212,8 @@ const Third = () => {
                 <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-100 top-181 blur-[14px] transform scale-y-[-1] mb-8 hidden sm:block" />
 
 
-                <img src="/Cld.svg" className="absolute z-70 w-77 left-0 top-77 block sm:hidden blue-[1px]" />
-                <img src="/Cld (1).svg" className="absolute z-70 w-71 right-0 top-97 block sm:hidden blue-[1px]" />
+                <img src="/cld.svg" className="absolute z-70 w-77 left-0 top-77 block sm:hidden blue-[1px]" />
+                <img src="/cld (1).svg" className="absolute z-70 w-71 right-0 top-97 block sm:hidden blue-[1px]" />
                 <img src="/cld (2).svg" className="absolute z-70 w-34 left-18 top-127 block sm:hidden " />
                 <img src="/CLoud3.svg" className="absolute z-0 w-67 left-0 top-79 block sm.hidden " />
                 <img src="/cld1.svg" className="absolute z-0 w-47 right-0 top-93 block sm.hidden " />

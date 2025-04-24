@@ -29,7 +29,7 @@ const Prizes = () => {
           className="w-100 h-120 relative z-[3]"
         />
         <img
-          src="/trophy 2.png"
+          src="/Trophy 2.png"
           alt="Trophy 2"
           className="w-100 h-100 relative z-[3]"
         />
@@ -43,7 +43,7 @@ const Prizes = () => {
           className="w-90 h-110 relative z-[3]"
         />
         <img
-          src="/trophy 2.png"
+          src="/Trophy 2.png"
           alt="Trophy 2"
           className="w-100 h-120 relative z-[3]"
         />
