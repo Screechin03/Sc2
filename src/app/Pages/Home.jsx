@@ -10,6 +10,7 @@ import Last from "./Last";
 import Faqs from "./Faqs";
 import Cards from "./Cards";
 import Sponsors from "./Sponsors";
+import DevfolioButton from "./DevfolioButton";
 
 const inter = Inter({ subsets: ["latin"] });
 const tiny = Tiny5({ subsets: ["latin", "greek"], weight: "400" });
@@ -72,27 +73,11 @@ export default function Home() {
                 <p className="mt-2 text-base sm:text-xl md:text-xl lg:text-2xl bg-gradient-to-r from-[#BAF7FF] to-white text-transparent bg-clip-text sm:font-medium sm:mb-7">
                     Code with Purpose & Innovate, Collaborate, Dominate
                 </p>
-                <a
-                    href="https://devfolio.co"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 relative z-[3] sm:mt-9 block"
-                    style={{ display: 'inline-block', cursor: 'pointer' }}
-                >
-                    <img
-                        src="/Cta Button.png"
-                        alt="Call to Action"
-                        className="w-76 h-15 z-90 "
-                        style={{
-                            transition: 'transform 0.3s ease',
-                        }}
-                        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-                        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                    />
-                </a>
+                
+                 <DevfolioButton /> 
 
                 {/* Floating Ghost + More Elements */}
-                <div className="-mt-25 relative flex flex-col items-center justify-center w-full z-[3]">
+                <div className="-mt-25 relative flex flex-col items-center justify-center w-full z-[2]">
                     <div className="flex flex-col absolute inset-0 w-full h-full z-[2]">
                         <p className="mt-28 bg-gradient-to-r from-[#A5FECB] to-[#A5FECB] via-[#92EFFD] text-transparent bg-clip-text  font-ticketing mx-8 text-center opacity-100 text-base absolute z-20 block sm:hidden">
                             Unleash your creativity and join Status Code 2, the ultimate 36-hour hackathon extravaganza! Compete across diverse categories, showcasing your skills, ingenuity, and collaborative spirit alongside like-minded individuals. Discover the perfect platform to challenge yourself.
