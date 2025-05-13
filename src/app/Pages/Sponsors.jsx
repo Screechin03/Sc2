@@ -59,7 +59,7 @@ const Sponsors = () => {
             <div className="absolute inset-0 flex items-center justify-center mt-24">
               <div className="w-48 h-12 relative">
                 <img
-                  src="/ethindia.png"
+                  src="/ethIndia.png"
                   className="w-40 h-20 mb-20 object-contain mix-blend-color-dodge brightness-115"
                   alt="ETHIndia"
                 />
@@ -137,7 +137,7 @@ const Sponsors = () => {
             <div className="absolute inset-0 flex items-center justify-center mt-14">
               <div className="w-32 h-8 relative">
                 <img
-                  src="/ethindia.png"
+                  src="/ethIndia.png"
                   className="w-full h-full object-contain mix-blend-color-dodge brightness-115"
                   alt="ETHIndia"
                 />
