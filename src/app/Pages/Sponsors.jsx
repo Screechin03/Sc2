@@ -59,7 +59,7 @@ const Sponsors = () => {
             <div className="absolute inset-0 flex items-center justify-center mt-24">
               <div className="w-48 h-12 relative">
                 <img
-                  src="/ethindia.png"
+                  src="/ethIndia.png"
                   className="w-40 h-20 mb-20 object-contain mix-blend-color-dodge brightness-115"
                   alt="ETHIndia"
                 />
@@ -113,10 +113,10 @@ const Sponsors = () => {
             </div>
             {/*Devfolio as Platinum sponsor for mobile */}
             <div className="absolute inset-0 flex items-center justify-center mt-14">
-              <div className="w-40 h-10 relative">
+              <div className="w-10 h-10 relative">
                 <img
                   src="/devfolio.png"
-                  className="w-full h-full object-contain mix-blend-color-dodge brightness-115"
+                  className="w-30px h-30px object-contain mix-blend-color-dodge brightness-115"
                   alt="Devfolio"
                 />
               </div>
@@ -135,10 +135,10 @@ const Sponsors = () => {
             </div>
             {/* ETHIndia as Gold sponsor for mobile */}
             <div className="absolute inset-0 flex items-center justify-center mt-14">
-              <div className="w-32 h-8 relative">
+              <div className="w-10 h-10 relative">
                 <img
-                  src="/ethindia.png"
-                  className="w-full h-full object-contain mix-blend-color-dodge brightness-115"
+                  src="/ethIndia.png"
+                  className="w-30px h-30px ml-30 object-contain mix-blend-color-dodge brightness-115"
                   alt="ETHIndia"
                 />
               </div>
