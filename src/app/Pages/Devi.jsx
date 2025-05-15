@@ -15,7 +15,7 @@ const Devi = () => {
 
   return (
     <>
-       <a
+      {/* <a
         className="mt-4 relative z-[3] sm:mt-9 inline-block cursor-pointer"
         href="https://apply.devfolio.co"
         data-hackathon-slug="statuscode-2"
@@ -27,9 +27,19 @@ const Devi = () => {
           src="/Devfolio_Logo-White.png"
           alt="Apply with Devfolio"
           className="w-full h-full rounded-sm"
-          style={{ transition: "transform 0.3s ease", transform: isHovered ? 'scale(1.05)' : 'scale(1)' }}
+          style={{
+            transition: "transform 0.3s ease",
+            transform: isHovered ? "scale(1.05)" : "scale(1)",
+          }}
         />
-      </a> 
+      </a> */}
+      <div
+  className="apply-button h-11 w-78"
+  data-hackathon-slug="statuscode-2"
+  data-button-theme="light"
+></div>
+
+      
     </>
   );
 };
