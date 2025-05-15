@@ -11,7 +11,7 @@ const Devi = () => {
       document.body.removeChild(script);
     };
   }, []);
-  const [isHovered, setIsHovered] = useState(false);
+  //const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
