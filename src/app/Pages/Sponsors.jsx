@@ -40,7 +40,7 @@ const Sponsors = () => {
                 <img
                   src="/devfolio.png"
                   className="w-40 h-40 object-contain mix-blend-color-dodge brightness-115"
-                  alt="Devfolio"
+                  alt="DEVFOLIO LOGO"
                 />
               </div>
             </div>
@@ -61,7 +61,7 @@ const Sponsors = () => {
                 <img
                   src="/ethIndia.png"
                   className="w-40 h-20 mb-20 object-contain mix-blend-color-dodge brightness-115"
-                  alt="ETHIndia"
+                  alt="ETHINDIA LOGO"
                 />
               </div>
             </div>
@@ -117,7 +117,7 @@ const Sponsors = () => {
                 <img
                   src="/devfolio.png"
                   className="w-30px h-30px object-contain mix-blend-color-dodge brightness-115"
-                  alt="Devfolio"
+                  alt="DEVFOLIO LOGO"
                 />
               </div>
             </div>
@@ -139,7 +139,7 @@ const Sponsors = () => {
                 <img
                   src="/ethIndia.png"
                   className="w-30px h-30px ml-30 object-contain mix-blend-color-dodge brightness-115"
-                  alt="ETHIndia"
+                  alt="ETHINDIA LOGO"
                 />
               </div>
             </div>

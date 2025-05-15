@@ -25,7 +25,7 @@ const Devi = () => {
       >
         <img
           src="/Devfolio_Logo-White.png"
-          alt="DEVFOLIO LOGO"
+          alt="Aplly with Devfolio"
           className="w-full h-full rounded-sm"
           style={{ transition: "transform 0.3s ease", transform: isHovered ? 'scale(1.05)' : 'scale(1)' }}
         />
