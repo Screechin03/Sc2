@@ -11,6 +11,7 @@ import Faqs from "./Faqs";
 import Cards from "./Cards";
 import Sponsors from "./Sponsors";
 import DevfolioButton from "./DevfolioButton";
+import Devi from "./Devi";
 
 const inter = Inter({ subsets: ["latin"] });
 const tiny = Tiny5({ subsets: ["latin", "greek"], weight: "400" });
@@ -74,7 +75,8 @@ export default function Home() {
                     Code with Purpose & Innovate, Collaborate, Dominate
                 </p>
                 
-                 <DevfolioButton /> 
+                  <Devi />
+                 
 
                 {/* Floating Ghost + More Elements */}
                 <div className="-mt-25 relative flex flex-col items-center justify-center w-full z-[2]">
