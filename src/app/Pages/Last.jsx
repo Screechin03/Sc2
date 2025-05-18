@@ -12,7 +12,7 @@ const Last = () => {
                 <p className="text-[#2A4EB0] font-light text-2xl px-24 mt-8 font-ticketing text-center brightness-180 z-60 hidden sm:block">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don’t miss out on key updates and opportunities, join us today!</p>
                 <p className="text-[#2A4EB0] font-light text-sm px-3 mt-4 font-ticketing text-center brightness-180 z-60 block sm:hidden">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don’t miss out on key updates and opportunities, join us today!</p>
             </div>
-            <div className="relative flex justify-between w-full px-12 md:px-24 lg:px-40 mt-17 z-60 text-white hidden sm:flex">
+            <div className="relative justify-between w-full px-12 md:px-24 lg:px-40 mt-17 z-60 text-white hidden sm:flex">
                 <div className="flex flex-col items-center">
                     <p className="text-3xl font-bold">ADDRESS</p>
                     <p className="text-xl text-[#92DEFF] text-center bf-clip-text mt-2">
@@ -50,7 +50,7 @@ const Last = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative flex   space-x-6 justify-center mt-17 z-60 text-white block sm:hidden">
+            <div className="relative flex   space-x-6 justify-center mt-17 z-60 text-white sm:hidden">
                 <div className="flex flex-col items-center">
                     <p className="text-lg font-bold">ADDRESS</p>
                     <p className="text-sm text-[#92DEFF] text-center bf-clip-text mt-2">
