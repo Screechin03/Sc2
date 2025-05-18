@@ -9,8 +9,8 @@ const Last = () => {
             <div className="alsolute z-60 -mt-6 flex justify-center items-center flex-col">
                 <p className="text-3xl relative top-12 font-ticket font-light">Join Us</p>
                 <img src="Cta Button (1).png" className=" w-56" />
-                <p className="text-[#2A4EB0] font-light text-2xl px-24 mt-8 font-ticketing text-center brightness-180 z-60 hidden sm:block">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don’t miss out on key updates and opportunities, join us today!</p>
-                <p className="text-[#2A4EB0] font-light text-sm px-3 mt-4 font-ticketing text-center brightness-180 z-60 block sm:hidden">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don’t miss out on key updates and opportunities, join us today!</p>
+                <p className="text-[#2A4EB0] font-light text-2xl px-24 mt-8 font-ticketing text-center brightness-180 z-60 hidden sm:block">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don't miss out on key updates and opportunities, join us today!</p>
+                <p className="text-[#2A4EB0] font-light text-sm px-3 mt-4 font-ticketing text-center brightness-180 z-60 block sm:hidden">Join our discord community to stay updated on all the latest developments and announcements for out hackathon! Don't miss out on key updates and opportunities, join us today!</p>
             </div>
             <div className="relative justify-between w-full px-12 md:px-24 lg:px-40 mt-17 z-60 text-white hidden sm:flex">
                 <div className="flex flex-col items-center">
@@ -20,13 +20,14 @@ const Last = () => {
                         IISER Kolkata
                     </p>
                 </div>
+                
                 <div className="flex flex-col items-center">
                     <p className="text-3xl font-bold">RESOURCES</p>
-                    <div className="flex flex-col text-xl text-[#92DEFF] mt-2 items-center">
-                        <a href="/sponsorship-brochure.pdf" target="_blank" className="hover:underline">
+                    <div className="flex flex-col text-xl text-[#92DEFF] mt-2 items-center text-center space-y-1 max-w-[200px]">
+                        <a href="/sponsorship-brochure.pdf" target="_blank" className="hover:underline break-words">
                             Sponsorship Brochure
                         </a>
-                        <a href="/hacker-guide.pdf" target="_blank" className="hover:underline ">
+                        <a href="/hacker-guide.pdf" target="_blank" className="hover:underline">
                             Hacker Guide
                         </a>
                     </div>
@@ -50,29 +51,30 @@ const Last = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative flex   space-x-6 justify-center mt-17 z-60 text-white sm:hidden">
+            <div className="relative flex space-x-6 justify-center mt-17 z-60 text-white sm:hidden -mb-20">
                 <div className="flex flex-col items-center">
                     <p className="text-lg font-bold">ADDRESS</p>
-                    <p className="text-sm text-[#92DEFF] text-center bf-clip-text mt-2">
+                    <p className="text-sm px-3 text-[#92DEFF] text-center bf-clip-text mt-2">
                         APC Ray Lecture Hall Complex<br />
                         IISER Kolkata
                     </p>
                 </div>
+
                 <div className="flex flex-col items-center">
                     <p className="text-lg font-bold">RESOURCES</p>
-                    <div className="flex flex-col text-sm text-[#92DEFF] mt-2 items-center justify-center">
+                    <div className="flex flex-col text-sm text-[#92DEFF] mt-2  text-center justify-center space-y-1">
                         <a href="/sponsorship-brochure.pdf" target="_blank" className="hover:underline">
                             Sponsorship Brochure
                         </a>
-                        <a href="/hacker-guide.pdf" target="_blank" className="hover:underline ">
+                        <a href="/hacker-guide.pdf" target="_blank" className="hover:underline text-center">
                             Hacker Guide
                         </a>
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center pr-1"> {/* pr-x: Padding on right side (x=1) */}
                     <p className="text-lg font-bold">STAY CONNECTED</p>
-                    <div className="flex space-x-3 text-[#92DEFF] mt-2">
+                    <div className="flex px-4 space-x-3 text-[#92DEFF] mt-2">
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                             <FaInstagram className="text-sm hover:text-white font-ticketing" />
                         </a>
@@ -88,7 +90,9 @@ const Last = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative w-full h-screen overflow-hidden -mt-80">
+
+            {/* <div className="relative w-full h-screen overflow-hidden -mt-80"> */}
+            <div className="relative w-full min-h-screen overflow-hidden -mt-72 sm:-mt-80">
                 {/* Moon Glow */}
                 <img
                     src="/glowmoon.png"
@@ -96,8 +100,8 @@ const Last = () => {
                     alt="Moon Glow"
                 />
                 <img
-                    src="/glowmoon.png"
-                    className="absolute top-[30%] left-1/2 transform -translate-x-1/2 z-1 w-[800px] opacity-70 block sm:hidden"
+                    src="/glowmoon.png" 
+                    className="absolute left-1/2 transform -translate-x-1/2 z-1 w-[800px] opacity-70 block sm:hidden top-[40%]"
                     alt="Moon Glow"
                 />
 
@@ -109,7 +113,7 @@ const Last = () => {
                 />
                 <img
                     src="/mountians (1).png"
-                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-2 w-full opacity-100 block sm:hidden"
+                    className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-2 w-full opacity-100 block sm:hidden"
                     alt="Mountains"
                 />
 
@@ -134,7 +138,7 @@ const Last = () => {
                 />
                 <img
                     src="/Group 170.png"
-                    className="absolute top-[66%]  left-1/2 transform transalte-y-1/2 -translate-x-1/2 z-4 w-[220px] block sm:hidden"
+                    className="absolute top-[64%] left-1/2 transform transalte-y-1/2 -translate-x-1/2 z-4 w-[220px] block sm:hidden"
                     alt="Character on Broomstick"
                 />
 
@@ -146,7 +150,7 @@ const Last = () => {
                 />
 
                 {/* Thank You Text */}
-                <div className="absolute bottom-[20px] left-1/2 transform -translate-x-1/2 z-5 text-white text-center text-xl font-semibold tracking-wide">
+                <div className="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 z-5 text-white text-center text-xl font-semibold tracking-wide w-100">
                     @2025 IIIT Kalyani
                 </div>
             </div>
@@ -155,4 +159,4 @@ const Last = () => {
     )
 }
 
-export default Last
+export default Last;

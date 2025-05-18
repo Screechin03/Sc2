@@ -51,8 +51,6 @@ const Sponsors = () => {
 
     const platinumSponsors = [
         { name: "DEVFOLIO", logo: "/devfolio.png" },
-        { name: "DEVFOLIO", logo: "/devfolio.png" },
-        { name: "DEVFOLIO", logo: "/devfolio.png" },
 
 
     ];
