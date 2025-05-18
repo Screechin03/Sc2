@@ -24,9 +24,9 @@ const Second = () => {
 
     return (
         <>
-            <div id="second" className="relative w-full overflow-hidden hidden sm:block -mb-50 md:mt-30 md:z-[90]">
+            <div id="second" className="relative w-full overflow-hidden hidden sm:block  -mb-50 md:mt-30 md:z-[90]">
 
-                <img src="/Landgroup.png" alt="Background Element" className="w-full opacity-100 mt-50 relative z-4" />
+                <img src="/landgroup.png" alt="Background Element" className="w-full opacity-100 mt-50 relative z-80" />
 
                 <div className="absolute lg:top-97 md:top-76 lg:left-1/2 md:left-1/2 transform -translate-x-1/2 text-white md:text-[120px] lg:text-[170px] z-1 font-bold px-4 py-2 rounded hidden sm:block">
                     {formatTime(time)}
@@ -38,39 +38,60 @@ const Second = () => {
                     HACKING STARTS IN...
                 </div>
 
-                <div className="absolute z-10 md:top-107 lg:top-137 md:left-73 lg:left-116 text-red-500 font-light flex flex-row md:text-2xl lg:text-4xl md:space-x-24 lg:space-x-36 items-center">
+                <div className="absolute z-80 md:top-107 lg:top-137 md:left-73 lg:left-114 text-red-500 font-light flex flex-row md:text-2xl lg:text-4xl md:space-x-24 lg:space-x-36 items-center">
                     <p>DAYS</p>
                     <p>HOURS</p>
                     <p>MINUTES</p>
                 </div>
-                <div className="absolute z-4 top-120 opacity-80 blue-[3px] hidden md:block lg:hidden sm:block"><img src="/Rectangle 15.svg" /></div>
-                <div className="absolute z-4 top-160 opacity-90 blue-[3px] hidden md:block lg:hidden sm:block transform scale-y-[-1]"><img src="/Rectangle 15.svg" /></div>
+                <div className="absolute z-40 top-120 opacity-80 blue-[3px] hidden md:block lg:hidden sm:block"><img src="/Rectangle 15.svg" /></div>
+                <div className="absolute z-40 top-160 opacity-90 blue-[3px] hidden md:block lg:hidden sm:block transform scale-y-[-1]"><img src="/Rectangle 15.svg" /></div>
                 <div className="overflow-hidden h-screen w-full absolute top-0 left-0">
                     <img src="/rotate=0.svg" className="h-340 w-340 md:h-220 md:w-220 lg:h-340 lg:w-340 absolute md:-top-10 lg:-top-24 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden lg:pt-8" />
                     <img src="/rotate=120.png" className="h-260 w-260 md:h-170 md:w-170 lg:h-260 lg:w-260 absolute md:top-10 top-20 left-1/2 transform -translate-x-1/2 z-2 spin-slow overflow-hidden mt-7" />
                     <img src="/rotate=0.svg" className="h-240 w-240 md:h-160 md:w-160 lg:h-240 lg:w-240 absolute md:top-15 top-23 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-4" />
                 </div>
             </div>
-            <div className="relative w-full block sm:hidden py-16 md:hidden mb-70 mt-70" id="second-mobile">
-                <div className="absolute top-43 left-1/2 transform -translate-x-1/2 text-white text-5xl z-10 font-bold px-4 py-2 rounded">
+            <div className="relative w-full block sm:hidden py-16 md:hidden mb-70 mt-30 z-60 " id="second-mobile">
+                <div className="absolute top-65 left-1/2 transform -translate-x-1/2 text-white text-5xl z-10 font-bold px-4 py-2 rounded">
                     {formatTime(time)}
                 </div>
-                <div className="absolute z-10 top-27 left-1/2 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
+                <div className="absolute z-10 top-53 left-1/2 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
                     HURRY UP!
                 </div>
-                <div className="absolute z-10 top-33 left-1/2 text-white font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
+                <div className="absolute z-10 top-59 left-1/2 text-white font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
                     HACKING STARTS IN...
                 </div>
-                <div className="absolute z-10 top-54 left-63 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-lg space-x-5 items-center">
+                <div className="absolute z-10 top-77 left-52 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-lg space-x-5 items-center">
                     <p>DAYS</p>
                     <p>HOURS</p>
                     <p>MINUTES</p>
                 </div>
-                <div className=" h-screen w-full absolute -top-45 left-0">
-                    <div className="relative h-full w-full flex items-center justify-center">
-                        <img src="/rotate=0.svg" className="h-[480px] w-[480px] transform translate-x-1 left-1 translate-y-1 absolute z-4 spin" />
-                        <img src="/rotate=120.png" className="h-[360px] w-[360px] transform translate-x-1 translate-y-1 absolute z-2 spin-slow" />
-                        <img src="/rotate=0.svg" className="h-[320px] w-[320px]  transform translate-x-1 translate-y-1 absolute z-2 spin" />
+                <div className="h-screen w-full absolute -top-45 left-0">
+                    <div className="relative h-full w-full flex items-center justify-center spin">
+                        {/* Outermost circle */}
+                        <img
+                            src="/rotate=0.svg"
+                            className="h-[380px] w-[380px] absolute z-2 mt-4  "
+                            alt="Outer rotating ring"
+                        />
+                    </div></div>
+                <div className="h-screen w-full absolute -top-45 left-0">
+                    <div className="relative h-full w-full flex items-center justify-center spin">
+                        {/* Middle circle */}
+                        <img
+                            src="/rotate=0.svg"
+                            className="h-[300px] w-[300px] absolute z-3 mt-4 "
+                            alt="Middle rotating ring"
+                        />
+                    </div></div>
+                <div className="h-screen w-full absolute -top-45 left-0">
+                    <div className="relative h-full w-full flex items-center justify-center spin-slow">
+                        {/* Innermost circle */}
+                        <img
+                            src="/rotate=120.png"
+                            className="h-[300px] w-[300px] absolute z-4 "
+                            alt="Inner rotating ring"
+                        />
                     </div>
                 </div>
             </div>

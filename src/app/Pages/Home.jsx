@@ -57,8 +57,9 @@ export default function Home() {
             <img src="/Group 129.svg" alt="Background Element" className="w-10 absolute top-140 right-24 h-10 opacity-80 z-[2] hidden sm:block" />
 
 
+            
             <div className="relative z-[999]">
-                <Navbar />
+                <Navbar/>
             </div>
             <div className="relative flex flex-col items-center justify-center min-h-screen text-white font-ticketing mt-19 z-[3] pb-32">
                 <Head>

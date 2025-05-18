@@ -21,7 +21,7 @@ const Faqs = () => {
             answer: "There are no participation fees for this hackathon. It's completely free!",
         },
         {
-            question: "WHAT ARE THE PREREQUISITES TO PARTICIPATE IN THIS HACKATHON?",
+            question: "WHAT ARE THE PREREQUISITES TO PARTICIPATE?",
             answer: "You should have basic knowledge of programming and a passion for hackathons.",
         },
         {
@@ -64,7 +64,7 @@ const Faqs = () => {
 
                 </div>
             </div>
-            <div className="mt-60 w-full flex flex-col gap-4 pl-47 hidden sm:block">
+            <div className="mt-60 w-full flex-col gap-4 pl-47 hidden sm:block">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
@@ -95,7 +95,7 @@ const Faqs = () => {
                     </div>
                 ))}
             </div>
-            <div className="mt-60 w-full flex flex-col gap-2 pl-4 block sm:hidden">
+            <div className="mt-60 w-full flex flex-col gap-2 pl-4 sm:hidden">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
@@ -107,11 +107,21 @@ const Faqs = () => {
                                     }`}
                                 onClick={() => toggleFAQ(index)}
                             >
-                                <img
-                                    src="/Group 150.svg"
-                                    alt={openIndex === index ? "Close" : "Open"}
-                                    className="w-7 h-7"
-                                />
+                                {index !== 3 && (
+                                    <img
+                                        src="/Group 150.svg"
+                                        alt={openIndex === index ? "Close" : "Open"}
+                                        className="w-6 h-6"
+                                    />
+                                )}
+                                {index == 3 && (
+                                    <img
+                                        src="/Group 150.svg"
+                                        alt={openIndex === index ? "Close" : "Open"}
+                                        className="w-6 h-6 -mr-1.5 "
+                                    />
+                                )}
+
                             </button>
 
 

@@ -21,16 +21,14 @@ const slides = [
         id: "B",
         content: (
             <div className="relative flex flex-col items-center justify-center">
-                <h2 className="pt-20 text-4xl md:text-5xl font-extrabold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
+                <h2 className="pt-20 text-4xl md:text-5xl font-bold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
                     May 15
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     11:59 PM
                 </p>
-                <img src="/land ghost.png" alt="Trophy 2" className="bottom-20  w-64 relative z-[3]" />
-                <p className="absolute top-90 text-red-500 font-bold text-xl md:text-3xl tracking-wider z-[3]">
-                    Registration End
-                </p>
+                <img src="/land ghost.png" alt="Trophy 2" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/Group 69.svg" className="text-red-500  absolute top-59 z-90 w-37" />
             </div>
         )
     },
@@ -44,10 +42,8 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     9:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Trophy 2" className="bottom-20   w-64 relative z-[3]" />
-                <p className="absolute top-90 text-red-500 font-bold text-xl md:text-3xl tracking-wider z-[3]">
-                    Hacking Begins
-                </p>
+                <img src="/land ghost.png" alt="Trophy 2" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/Group 68.svg" className="text-red-500  absolute top-59 z-90 w-37" />
             </div>
         )
     }
@@ -77,7 +73,7 @@ const Third = () => {
 
     return (
         <>
-            <div id="schedule" className="relative flex flex-col items-center justify-center h-screen z-40  md:-mt-16">
+            <div id="schedule" className="relative flex flex-col items-center justify-center h-screen z-40  lg:-mt-66 md:-mt-16">
                 <motion.div
                     key={`left-slide-${leftIndex}-${direction}`}
                     className="absolute lg:left-43 sm:left-43 lg:top-1/2 sm:top-1/2 z-8 md:left-22 transform -translate-y-1/2 opacity-100 w-114 blur-xs hidden sm:block"
@@ -139,7 +135,7 @@ const Third = () => {
                 </motion.div>
                 <motion.div
                     key={`center-mobile-slide-${centerIndex}-${direction}`}
-                    className="relative w-110 opacity-100 mx-8 block sm:hidden"
+                    className="relative w-110 opacity-100 mx-8 -mt-60 block sm:hidden"
                     initial={direction === "next"
                         ? { scale: 0.9, x: "30%", opacity: 0.9, zIndex: 40 }
                         : { scale: 0.9, x: "-30%", opacity: 0.9, zIndex: 40 }
@@ -212,8 +208,8 @@ const Third = () => {
                 <img src="/Rectangle 15.svg" className="absolute z-20 w-full right-0 opacity-100 top-181 blur-[14px] transform scale-y-[-1] mb-8 hidden sm:block" />
 
 
-                <img src="/cld.svg" className="absolute z-70 w-77 left-0 top-77 block sm:hidden blue-[1px]" />
-                <img src="/cld (1).svg" className="absolute z-70 w-71 right-0 top-97 block sm:hidden blue-[1px]" />
+                <img src="/Cld.svg" className="absolute z-70 w-77 left-0 top-77 block sm:hidden blue-[1px]" />
+                <img src="/Cld (1).svg" className="absolute z-70 w-71 right-0 top-97 block sm:hidden blue-[1px]" />
                 <img src="/cld (2).svg" className="absolute z-70 w-34 left-18 top-127 block sm:hidden " />
                 <img src="/CLoud3.svg" className="absolute z-0 w-67 left-0 top-79 block sm.hidden " />
                 <img src="/cld1.svg" className="absolute z-0 w-47 right-0 top-93 block sm.hidden " />
