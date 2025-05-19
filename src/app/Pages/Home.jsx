@@ -119,7 +119,7 @@ export default function Home() {
             <div className="mt-16 md:mt-36"></div>
             <Third />
 
-            <div className="mt-20 md:mt-40"></div>
+            <div className="hidden sm:flex mt-20 md:mt-40"></div>
             <Prizes />
 
             <div className="mt-20 md:mt-40"></div>
