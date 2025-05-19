@@ -79,15 +79,15 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`w-full z-[999] transition-all duration-300 md:fixed md:top-0 md:left-0 ${
+            className={`w-full z-[999] transition-all duration-300 fixed md:top-0 md:left-0 ${
                 isScrolled
-                    ? "sm:bg-transparent md:bg-white/1 md:backdrop-blur-md"
+                    ? "sm:bg-transparent bg-white/1 backdrop-blur-md"
                     : "bg-transparent"
             }`}
         >
             <div className="flex justify-between items-center px-6 md:px-4 lg:px-16 py-5">
                 <div className="flex items-center">
-                    <img src="/Vector.png" alt="Status Code 2" className="h-16 w-auto md:h-12 md:mr-3" />
+                    <img src="/Vector.png" alt="Status Code 2" className="h-9 w-auto md:h-12 md:mr-3" />
                 </div>
                 <div className="hidden md:flex flex-1 justify-center items-center text-white">
                     <div className="flex justify-between md:gap-3 lg:gap-8 w-full max-w-3xl">
