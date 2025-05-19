@@ -149,6 +149,12 @@ const Last = () => {
                     alt="Rectangle Background"
                 />
 
+                {/* <img
+                    src="/Rectangle 2888.svg"
+                    className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-2 w-full  opacity-90"
+                    alt="Rectangle Background"
+                /> */}
+
                 {/* Thank You Text */}
                 <div className="absolute bottom-[10px] left-1/2 transform -translate-x-1/2 z-5 text-white text-center text-xl font-semibold tracking-wide w-100">
                     @2025 IIIT Kalyani

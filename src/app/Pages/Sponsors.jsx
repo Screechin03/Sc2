@@ -65,7 +65,7 @@ const Sponsors = () => {
     ];
 
     return (
-        <div id="sponsors" className="min-h-screen h-auto w-full flex flex-col items-center z-30 gap-40 sm:-mt-20 lg:-mt-10 overflow-hidden">
+        <div id="sponsors" className="min-h-auto w-auto flex flex-col items-center z-30 gap-40 sm:-mt-20 lg:-mt-10 overflow-hidden">
             <div className="relative mb-10 ">
                 <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50">
                     SPONSORS

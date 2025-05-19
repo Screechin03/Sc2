@@ -1,35 +1,59 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 const Cards = () => {
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
+    const [isMobileView, setIsMobileView] = useState(false);
+    const [animationClass, setAnimationClass] = useState("");
+
+    useEffect(() => {
+     const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
     const cards = [
         { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
-        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
-        { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
-        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
-        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
-        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
+        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Wildlife_hover.svg" className="h-[662px] w-[487px]" /> },
+        { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/Hardware_hover.svg" className="h-[662px] w-[487px]" /> },
+        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/Open_inno_hover.svg" className="h-[662px] w-[487px]" /> },
+        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/Blockchain_hover.svg" className="h-[662px] w-[487px]" /> },
+        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Education_hover.svg" className="h-[662px] w-[487px]" /> },
     ];
     const cards2 = [
         { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/TEXT.svg" className="h-[662px] w-[487px]" /> },
-        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
-        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/wild_mob.svg" className="h-[662px] w-[487px]" /> },
+        { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/hard_mob.svg" className="h-[662px] w-[487px]" /> },
+        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/block_mob.svg" className="h-[662px] w-[487px]" /> },
+        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/edu_mob.svg" className="h-[662px] w-[487px]" /> },
         { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
     ];
+    //TEXT.svg
 
     const handleNext = () => {
-        setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cards.length);
+        setAnimationClass("opacity-0 -translate-x-10");
+        setTimeout(() => {
+        setCurrentCardIndex((prev) => (prev + 1) % cards2.length);
+        setAnimationClass("opacity-0 translate-x-10");
+        setTimeout(() => setAnimationClass("opacity-100 translate-x-0"), 20);
+    }, 200);
     };
 
     const handlePrev = () => {
-        setCurrentCardIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+        setAnimationClass("opacity-0 translate-x-10");
+    setTimeout(() => {
+      setCurrentCardIndex((prev) =>
+        prev === 0 ? cards2.length - 1 : prev - 1
+      );
+      setAnimationClass("opacity-0 -translate-x-10");
+      setTimeout(() => setAnimationClass("opacity-100 translate-x-0"), 20);
+    }, 200);
     };
 
     return (
-        <div id="tracks" className="relative flex flex-col items-center min-h-screen w-screen bg-center text-white z-60">
+        <div id="tracks" className="relative flex flex-col items-center min-h-auto w-screen bg-center text-white z-60">
             <div className="text-center">
                 <div className="relative">
                     <span className="absolute z-1 transform -translate-x-1/2 translate-y-2 text-transparent bg-clip-text text-stroke-2 font-ticket text-[120px] font-bold uppercase opacity-50 tracking-wide">
@@ -40,7 +64,8 @@ const Cards = () => {
                     </span>
                 </div>
             </div>
-            <div className="hidden sm:flex gap-4 mt-70">
+            {!isMobileView ? (
+        <div className="flex gap-4 mt-70">
                 {cards.map((card, index) => (
                     <div
                         key={card.id}
@@ -50,8 +75,9 @@ const Cards = () => {
                                 ? "lg:scale-80 md:scale-60"
                                 : "lg:scale-100 md:scale-90"
                             }`}
-                        onMouseEnter={() => setCurrentCardIndex(index)}
-                        onMouseLeave={() => setCurrentCardIndex(null)}
+                        onClick={() =>
+                setCurrentCardIndex(currentCardIndex === index ? null : index)
+              }
                     >
                         <div
                             className={`absolute w-full h-full backface-hidden flex items-center justify-center text-lg font-bold text-gray-800 ${currentCardIndex === index ? "hidden" : "block"
@@ -67,9 +93,9 @@ const Cards = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> ) : (
 
-            <div className="flex sm:hidden flex-col items-center mt-10">
+            <div className="flex-col items-center mt-10">
                 <div className="relative w-full max-w-[400px] h-auto flex justify-center">
                     {cards2.map((card, index) => (
                         <div
@@ -82,7 +108,7 @@ const Cards = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex justify-center w-full max-w-[400px] -mt-32 space-x-8 relative z-50">
+                <div className="flex justify-center w-full max-w-[400px] -mt-21 space-x-8 relative z-50">
                     <button
                         className="text-white p-3 rounded-md hover:scale-110 transition-transform duration-300 active:scale-95"
                         onClick={handlePrev}
@@ -96,7 +122,7 @@ const Cards = () => {
                         <img src="/Arrow.svg" className="w-11 h-11" />
                     </button>
                 </div>
-            </div>
+            </div> )}
         </div>
     );
 };

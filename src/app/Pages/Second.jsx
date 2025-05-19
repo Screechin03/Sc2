@@ -51,21 +51,27 @@ const Second = () => {
                     <img src="/rotate=0.svg" className="h-240 w-240 md:h-160 md:w-160 lg:h-240 lg:w-240 absolute md:top-15 top-23 left-1/2 transform -translate-x-1/2 z-2 spin overflow-hidden pt-4" />
                 </div>
             </div>
-            <div className="relative w-full block sm:hidden py-16 md:hidden mb-70 mt-30 z-60 " id="second-mobile">
-                <div className="absolute top-65 left-1/2 transform -translate-x-1/2 text-white text-5xl z-10 font-bold px-4 py-2 rounded">
-                    {formatTime(time)}
-                </div>
-                <div className="absolute z-10 top-53 left-1/2 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
-                    HURRY UP!
-                </div>
-                <div className="absolute z-10 top-59 left-1/2 text-white font-light transform -translate-x-1/2 flex flex-row text-xl items-center">
-                    HACKING STARTS IN...
-                </div>
-                <div className="absolute z-10 top-77 left-52 text-red-500 font-light transform -translate-x-1/2 flex flex-row text-lg space-x-5 items-center">
-                    <p>DAYS</p>
-                    <p>HOURS</p>
-                    <p>MINUTES</p>
-                </div>
+            <div className="relative  w-full block sm:hidden py-16 md:hidden mb-70 mt-30 z-60 " id="second-mobile">
+                <div className="h-screen w-full absolute -top-45 left-0">
+                    <div className="relative h-full w-full flex flex-col items-center justify-center ">
+                        <div className=" z-10  text-red-500 font-light  text-xl items-center">
+                            HURRY UP!
+                        </div>
+                        <div className=" z-10  text-white font-light 2 text-xl items-center">
+                            HACKING STARTS IN...
+                        </div>
+                        <div className="flex flex-col justify-center items-center space-y-0 ">
+                            <div className=" text-white text-5xl z-10 font-bold px-4 py-2 rounded">
+                                {formatTime(time)}
+                            </div>
+                            <div className="z-10  text-red-500 font-light flex flex-row text-lg space-x-5 items-center">
+                                <p>DAYS</p>
+                                <p>HOURS</p>
+                                <p>MINUTES</p>
+                            </div>
+                        </div>
+                    </div></div>
+
                 <div className="h-screen w-full absolute -top-45 left-0">
                     <div className="relative h-full w-full flex items-center justify-center spin">
                         {/* Outermost circle */}
@@ -74,7 +80,8 @@ const Second = () => {
                             className="h-[380px] w-[380px] absolute z-2 mt-4  "
                             alt="Outer rotating ring"
                         />
-                    </div></div>
+                    </div>
+                </div>
                 <div className="h-screen w-full absolute -top-45 left-0">
                     <div className="relative h-full w-full flex items-center justify-center spin">
                         {/* Middle circle */}

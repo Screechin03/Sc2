@@ -18,6 +18,7 @@ const tiny = Tiny5({ subsets: ["latin", "greek"], weight: "400" });
 
 export default function Home() {
     const videoRef = useRef(null);
+    const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         if (videoRef.current) {
@@ -34,7 +35,7 @@ export default function Home() {
             }}
         >
             {/* 🎥 Background Video */}
-            <video
+           {isClient && ( <video
                 ref={videoRef}
                 autoPlay
                 loop
@@ -43,7 +44,7 @@ export default function Home() {
                 className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-100 mix-blend-screen"
             >
                 <source src="/537d97592d242580cfeedf0083ac44a75d06f8e4.mp4" type="video/mp4" />
-            </video>
+            </video> )}
 
 
 
@@ -61,7 +62,7 @@ export default function Home() {
             <div className="relative z-[999]">
                 <Navbar/>
             </div>
-            <div className="relative flex flex-col items-center justify-center min-h-screen text-white font-ticketing mt-19 z-[3] pb-32">
+            <div className="relative flex flex-col items-center justify-center min-h-auto text-white font-ticketing mt-19 z-[3] pb-32">
                 <Head>
                     <title>Status Code 2</title>
                 </Head>
@@ -72,7 +73,7 @@ export default function Home() {
                     <img src="/Vector (4).png" className="block sm:hidden mb-4 mt-9" alt="Mobile Vector" />
                 </>
 
-                <p className="mt-2 text-base sm:text-xl md:text-xl lg:text-2xl bg-gradient-to-r from-[#BAF7FF] to-white text-transparent bg-clip-text sm:font-medium sm:mb-7">
+                <p className="mt-2 text-center text-base sm:text-xl md:text-xl lg:text-2xl bg-gradient-to-r from-[#BAF7FF] to-white text-transparent bg-clip-text sm:font-medium sm:mb-7">
                     Code with Purpose & Innovate, Collaborate, Dominate
                 </p>
                 
