@@ -7,12 +7,12 @@ const slides = [
         content: (
             <div className="relative flex flex-col items-center justify-center">
                 <h2 className="pt-20 text-4xl md:text-5xl font-bold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
-                    May 5
+                    May 21
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold tracking-wider z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     12:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Trophy 2" className="bottom-27 w-64 relative z-[3] mt-16" />
+                <img src="/land ghost.png" alt="Reg Start" className="bottom-27 w-64 relative z-[3] mt-16" />
                 <img src="/Group 67.svg" className="text-red-500  absolute top-59 z-90 w-37" />
             </div>
         )
@@ -22,12 +22,12 @@ const slides = [
         content: (
             <div className="relative flex flex-col items-center justify-center">
                 <h2 className="pt-20 text-4xl md:text-5xl font-bold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
-                    May 15
+                    Aug 13
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
-                    11:59 PM
+                    12:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Trophy 2" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/land ghost.png" alt="Reg End" className="bottom-27  w-64 relative z-[3] mt-16" />
                 <img src="/Group 69.svg" className="text-red-500  absolute top-59 z-90 w-37" />
             </div>
         )
@@ -37,13 +37,58 @@ const slides = [
         content: (
             <div className="relative flex flex-col items-center justify-center">
                 <h2 className="pt-20 text-4xl md:text-5xl font-extrabold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
-                    May 25
+                    Aug 23
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
-                    9:00 AM
+                    11:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Trophy 2" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/land ghost.png" alt="Hack Start" className="bottom-27  w-64 relative z-[3] mt-16" />
                 <img src="/Group 68.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+            </div>
+        )
+    },
+    {
+        id: "D",
+        content: (
+            <div className="relative flex flex-col items-center justify-center">
+                <h2 className="pt-20 text-4xl md:text-5xl font-extrabold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
+                    Aug 23
+                </h2>
+                <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
+                    11:00 PM
+                </p>
+                <img src="/land ghost.png" alt="Mid Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/Group 70.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+            </div>
+        )
+    },
+    {
+        id: "E",
+        content: (
+            <div className="relative flex flex-col items-center justify-center">
+                <h2 className="pt-20 text-4xl md:text-5xl font-extrabold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
+                    Aug 24
+                </h2>
+                <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
+                    04:00 PM
+                </p>
+                <img src="/land ghost.png" alt="Final Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/Group 71.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+            </div>
+        )
+    },
+    {
+        id: "F",
+        content: (
+            <div className="relative flex flex-col items-center justify-center">
+                <h2 className="pt-20 text-4xl md:text-5xl font-extrabold tracking-wide z-[3] bg-gradient-to-r from-[#FF5F6D] to-[#FF7E6C] text-transparent bg-clip-text">
+                    Aug 24
+                </h2>
+                <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
+                    05:15 PM
+                </p>
+                <img src="/land ghost.png" alt="Closing" className="bottom-27  w-64 relative z-[3] mt-16" />
+                <img src="/Group 72.svg" className="text-red-500  absolute top-59 z-90 w-37" />
             </div>
         )
     }
@@ -67,7 +112,7 @@ const Third = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
         setTimeout(() => setAnimating(false), 1000);
     };
-    const leftIndex = (currentIndex + 2) % slides.length;
+    const leftIndex = (currentIndex + 5) % slides.length;
     const centerIndex = currentIndex;
     const rightIndex = (currentIndex + 1) % slides.length;
 

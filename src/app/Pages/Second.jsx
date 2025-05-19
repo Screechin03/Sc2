@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Second = () => {
     const [isClient, setIsClient] = useState(false);
-    const [time, setTime] = useState(86400);
+    const [time, setTime] = useState(8259900); //for 10:00 A.M. 
 
     useEffect(() => {
         setIsClient(true); // Ensure it's client-side
