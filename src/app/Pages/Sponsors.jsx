@@ -75,7 +75,7 @@ const Sponsors = () => {
                     __SPONSORS__
                 </span>
             </div>
-            <div className="w-full flex flex-col items-center justify-center gap-10 px-10 h-auto">
+            <div className="w-full flex flex-col items-center justify-center gap-10 h-auto px-2 lg:w-[75%]">
                 <SponsorFrame frameImage="/Frame 71.svg" sponsors={titleSponsors} type="title" />
                 <SponsorFrame frameImage="/Frame 75.svg" sponsors={diamondSponsors} type="diamond" />
                 <SponsorFrame frameImage="/Frame 72.svg" sponsors={platinumSponsors} type="platinum" />
