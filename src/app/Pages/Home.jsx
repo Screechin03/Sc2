@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Second from "./Second";
 import Third from "./Third";
 import Prizes from "./Prizes";
+import Glimpse from "./Glimpse";
 import Last from "./Last";
 import Faqs from "./Faqs";
 import Cards from "./Cards";
@@ -118,6 +119,9 @@ export default function Home() {
 
             <div className="mt-16 md:mt-36"></div>
             <Third />
+
+            <div className="mt-16 md:mt-36"></div>
+            <Glimpse />
 
             <div className="hidden sm:flex mt-20 md:mt-40"></div>
             <Prizes />
