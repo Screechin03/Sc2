@@ -102,7 +102,7 @@ const Cards = () => {
                             key={card.id}
                             className={index === currentCardIndex ? "block w-full" : "hidden"}
                         >
-                            <div className="flex justify-center">
+                            <div className="flex mx-2 justify-center">
                                 {card.back}
                             </div>
                         </div>
