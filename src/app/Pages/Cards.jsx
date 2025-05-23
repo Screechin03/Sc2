@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from "react";
 
 const Cards = () => {
-    const [currentCardIndex, setCurrentCardIndex] = useState(0);
+    const [currentCardIndex, setCurrentCardIndex] = useState(null);
     const [isMobileView, setIsMobileView] = useState(false);
     const [animationClass, setAnimationClass] = useState("");
 
