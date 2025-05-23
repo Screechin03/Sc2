@@ -64,6 +64,18 @@ body {
   /* Moves slightly down */
 }
 
+@keyframes zoom-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .text-stroke-2 {
   -webkit-text-stroke: 0.5px #93c5fd;
   /* blue-300 hex code */

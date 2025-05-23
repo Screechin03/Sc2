@@ -12,7 +12,6 @@ import Faqs from "./Faqs";
 import Cards from "./Cards";
 import Sponsors from "./Sponsors";
 import DevfolioButton from "./DevfolioButton";
-import Devi from "./Devi";
 
 const inter = Inter({ subsets: ["latin"] });
 const tiny = Tiny5({ subsets: ["latin", "greek"], weight: "400" });
@@ -36,7 +35,7 @@ export default function Home() {
             }}
         >
             {/* 🎥 Background Video */}
-           {isClient && ( <video
+           <video
                 ref={videoRef}
                 autoPlay
                 loop
@@ -45,7 +44,7 @@ export default function Home() {
                 className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-100 mix-blend-screen"
             >
                 <source src="/537d97592d242580cfeedf0083ac44a75d06f8e4.mp4" type="video/mp4" />
-            </video> )}
+            </video> 
 
 
 
@@ -78,7 +77,7 @@ export default function Home() {
                     Code with Purpose & Innovate, Collaborate, Dominate
                 </p>
                 
-                  <Devi />
+                  <DevfolioButton />
                  
 
                 {/* Floating Ghost + More Elements */}
@@ -92,7 +91,7 @@ export default function Home() {
                         <img src="/Rectangle 3.png" className="absolute -z-0 w-full right-0 opacity-70 h-60 top-117 blur-[8px] hidden sm:block " />
                         <img src="/Rectangle 3.png" className="absolute -z-0 w-full right-0 opacity-80 h-60 top-123 hidden sm:block blur-[8px] transform scale-y-[-1]" />
                         <img src="/Rectangle 3.png" className="absolute -z-0 w-full right-0 opacity-100 h-60 top-183 block sm:hidden blur-[8px] transform scale-y-[-1]" />
-                        <img src="/Rectangle 3.png" className="absolute top-99 z-7 blur-[9px] opacity-80 " />
+                        <img style = {{clipPath: "inset(0 0 30% 0)"}} src="/Rectangle 3.png" className="absolute top-99 z-7 blur-[9px] opacity-80 w-full" />
                         <p className="lg:mt-158 md:mt-130 bg-gradient-to-r from-[#A5FECB] to-[#A5FECB] via-[#92EFFD] text-transparent bg-clip-text text-xl font-ticketing mx-34 text-center opacity-100 absolute z-20 hidden sm:block">
                             Unleash your creativity and join Status Code 2, the ultimate 36-hour hackathon extravaganza! Compete across diverse categories, showcasing your skills, ingenuity, and collaborative spirit alongside like-minded individuals. Discover the perfect platform to challenge yourself.
                         </p>

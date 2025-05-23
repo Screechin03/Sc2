@@ -1,26 +1,31 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from "react";
 
 const DevfolioButton = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
-      className="apply-button"
-      data-hackathon-slug="statuscode-2"
-      data-button-theme="light"
-      style={{ height: '44px', width: '312px' }}
-    ></div>
+    <>
+       <a
+        className="mt-4 relative z-[3] sm:mt-9 inline-block cursor-pointer"
+        href="https://statuscode-2.devfolio.co/"
+        target="_blank"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <img
+          src="/Cta Button.png"
+          alt="Apply with Devfolio"
+          className="w-full h-full rounded-sm"
+          style={{
+            transition: "transform 0.3s ease",
+            transform: isHovered ? "scale(1.05)" : "scale(1)",
+          }}
+        />
+      </a> 
+
+      
+    </>
   );
 };
 
-export default DevfolioButton;
+export default DevfolioButton; 
