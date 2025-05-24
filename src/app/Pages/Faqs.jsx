@@ -14,7 +14,7 @@ const Faqs = () => {
     },
     {
       question: "WILL THE HACKATHON BE IN PERSON OR ONLINE?",
-      answer: "The hackathon will be conducted online this year.",
+      answer: "The hackathon will be conducted in-person this year.",
     },
     {
       question: "HOW MUCH ARE THE PARTICIPATION FEES?",
