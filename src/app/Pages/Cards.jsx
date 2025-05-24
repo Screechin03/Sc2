@@ -19,7 +19,7 @@ const Cards = () => {
         { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Wildlife_hover.svg" className="h-[662px] w-[487px]" /> },
         { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/Hardware_hover.svg" className="h-[662px] w-[487px]" /> },
         { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/Open_inno_hover.svg" className="h-[662px] w-[487px]" /> },
-        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/Blockchain_hover.svg" className="h-[662px] w-[487px]" /> },
+        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/blockchain_hover.svg" className="h-[662px] w-[487px]" /> },
         { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Education_hover.svg" className="h-[662px] w-[487px]" /> },
     ];
     const cards2 = [

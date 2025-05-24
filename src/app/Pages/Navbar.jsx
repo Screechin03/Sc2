@@ -92,7 +92,7 @@ const Navbar = () => {
                 <div className="hidden md:flex flex-1 justify-center items-center text-white">
                     <div className="flex justify-between md:gap-3 lg:gap-8 w-full max-w-3xl">
                         <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("schedule")}>SCHEDULE</p>
-                        <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
+                        {/* <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p> */}
                         <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("tracks")}>TRACKS</p>
                         <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors")}>SPONSORS</p>
                         <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("faqs")}>FAQs</p>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 >
                     <div className="flex flex-col items-center gap-8 text-white text-2xl font-medium">
                         <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("schedule")}>SCHEDULE</p>
-                        <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
+                        {/* <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p> */}
                         <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("tracks")}>TRACKS</p>
                         <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("sponsors")}>SPONSORS</p>
                         <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("faqs")}>FAQs</p>
