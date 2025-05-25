@@ -32,7 +32,7 @@ const Faqs = () => {
         <span>
           Register your team @
           <a
-            href="https://devfolio.co"
+            href="https://statuscode-2.devfolio.co/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#92DEFF] underline hover:text-blue-300"
