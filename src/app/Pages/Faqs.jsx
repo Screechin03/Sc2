@@ -10,7 +10,7 @@ const Faqs = () => {
   const faqs = [
     {
       question: "HOW MANY TEAM MEMBERS DO I NEED?",
-      answer: "You need a team of 2-4 members to participate in the hackathon.",
+      answer: "You need a team of 2-5 members to participate in the hackathon.",
     },
     {
       question: "WILL THE HACKATHON BE IN PERSON OR ONLINE?",
