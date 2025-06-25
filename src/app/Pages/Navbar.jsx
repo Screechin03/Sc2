@@ -92,11 +92,11 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           > */}
-            <img
-              src="/Vector.png"
-              alt="Status Code 2"
-              className="h-9 w-auto md:h-12 md:mr-3"
-            />
+          <img
+            src="/Vector.png"
+            alt="Status Code 2"
+            className="h-9 w-auto md:h-12 md:mr-3"
+          />
           {/* </a> */}
         </div>
         <div className="hidden md:flex flex-1 justify-center items-center text-white">
@@ -139,16 +139,55 @@ const Navbar = () => {
           <img
             src="/CLG logo.png"
             alt="CLG Logo"
-            className="h-10 md:h-10 lg:h-12 w-auto md:ml-2 lg:ml-4"
+            className="h-10 mr-15 md:h-10 lg:h-12 w-auto md:ml-2 lg:ml-4"
           />
         </div>
+        <div className="hidden md:block">
+          <a
+            id="mlh-trust-badge"
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "block",
+              maxWidth: "70px",
+              minWidth: "60px",
+              position: "fixed",
+              right: "20px",
+              top: 0,
+              width: "10%",
+              zIndex: 10000,
+            }}
+          >
+            <img
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+              alt="Major League Hacking 2026 Hackathon Season"
+              style={{ width: "100%" }}
+            />          </a>
+        </div>
 
-        <button
-          className="md:hidden text-white z-[1001]"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={32} /> : <Menu size={32} />}
-        </button>
+        {/* MLH Badge for Mobile - Next to Hamburger */}
+        <div className="md:hidden flex items-center">
+          <a
+            href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-3"
+          >
+            <img
+              src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+              alt="Major League Hacking 2026 Hackathon Season"
+              className="h-14 w-auto"
+            />
+          </a>
+          
+          <button
+            className="text-white z-[1001]"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={42} /> : <Menu size={42} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu - fullscreen with animation */}
@@ -194,9 +233,20 @@ const Navbar = () => {
             >
               CONTACT US
             </p>
-          </div>
-          <div className="mt-12">
-            <img src="/CLG logo.png" alt="CLG Logo" className="h-16 w-auto" />
+          </div>{" "}
+          <div className="mt-12 flex items-center gap-4">
+            <img src="/CLG logo.png" alt="CLG Logo" className="h-20 w-auto" />
+            <a
+              href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+                alt="Major League Hacking 2026 Hackathon Season"
+                className="h-20 w-auto"
+              />
+            </a>
           </div>
         </div>
       </div>

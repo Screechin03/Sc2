@@ -67,6 +67,13 @@ const Last = () => {
             >
               Hacker Guide
             </a>
+            <a
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+              target="_blank"
+              className="hover:underline"
+            >
+              MLH Code of Conduct
+            </a>
           </div>
         </div>
 
@@ -121,8 +128,7 @@ const Last = () => {
 
         <div className="flex flex-col items-center">
           <p className="text-lg font-bold">RESOURCES</p>
-          <div className="flex flex-col text-sm text-[#92DEFF] mt-2  text-center justify-center space-y-1">
-            <a
+          <div className="flex flex-col text-sm text-[#92DEFF] mt-2  text-center justify-center space-y-1">            <a
               href="/Sponsorship brochure.pdf"
               target="_blank"
               className="hover:underline"
@@ -135,6 +141,13 @@ const Last = () => {
               className="hover:underline text-center"
             >
               Hacker Guide
+            </a>
+            <a
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+              target="_blank"
+              className="hover:underline text-center"
+            >
+              MLH Code of Conduct
             </a>
           </div>
         </div>
