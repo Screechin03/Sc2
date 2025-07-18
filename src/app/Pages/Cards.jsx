@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 const Cards = () => {
-    const [currentCardIndex, setCurrentCardIndex] = useState(null);
+    const [currentCardIndex, setCurrentCardIndex] = useState(null); // Keep null for desktop
+    const [mobileCardIndex, setMobileCardIndex] = useState(0); // Separate state for mobile
     const [isMobileView, setIsMobileView] = useState(false);
     const [animationClass, setAnimationClass] = useState("opacity-100 translate-x-0");
 
@@ -13,6 +14,7 @@ const Cards = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
     const cards = [
         { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/ed.svg" className="h-[662px] w-[487px]" /> },
         { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/Wildlife_hover.svg" className="h-[662px] w-[487px]" /> },
@@ -30,25 +32,17 @@ const Cards = () => {
         { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/edu_mob.svg" className="h-[662px] w-[487px]" /> },
     ];
     const handleNext = () => {
-        if (currentCardIndex === null) {
-            setCurrentCardIndex(0);
-            return;
-        }
         setAnimationClass("opacity-0 -translate-x-10");
         setTimeout(() => {
-            setCurrentCardIndex((prev) => (prev + 1) % cards2.length);
+            setMobileCardIndex((prev) => (prev + 1) % cards2.length);
             setAnimationClass("opacity-0 translate-x-10");
             setTimeout(() => setAnimationClass("opacity-100 translate-x-0"), 20);
         }, 200);
     };
     const handlePrev = () => {
-        if (currentCardIndex === null) {
-            setCurrentCardIndex(0);
-            return;
-        }
         setAnimationClass("opacity-0 translate-x-10");
         setTimeout(() => {
-            setCurrentCardIndex((prev) =>
+            setMobileCardIndex((prev) =>
                 prev === 0 ? cards2.length - 1 : prev - 1
             );
             setAnimationClass("opacity-0 -translate-x-10");
@@ -98,12 +92,12 @@ const Cards = () => {
                         </div>
                     ))}
                 </div>) : (
-                <div className="flex flex-col items-center mt-10"> 
-                    <div className="relative w-full max-w-[400px] h-auto flex justify-center -mb-30">
+                <div className="flex flex-col items-center mt-10">
+                    <div className="relative w-full max-w-[400px] h-auto flex justify-center -mb-25">
                         {cards2.map((card, index) => (
                             <div
                                 key={card.id}
-                                className={`${index === (currentCardIndex ?? 0) ? "block w-full" : "hidden"} ${animationClass} transition-all duration-300`}
+                                className={`${index === mobileCardIndex ? "block w-full" : "hidden"} ${animationClass} transition-all duration-300`}
                             >
                                 <div className="flex mx-2 justify-center">
                                     {card.back}
@@ -111,7 +105,7 @@ const Cards = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex justify-center w-full max-w-[400px] space-x-12 relative z-50"> 
+                    <div className="flex justify-center w-full max-w-[400px] space-x-12 relative z-50">
                         <button
                             className="text-white p-3 rounded-md hover:scale-110 transition-transform duration-300 active:scale-95"
                             onClick={handlePrev}

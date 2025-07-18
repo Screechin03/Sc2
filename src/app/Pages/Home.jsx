@@ -12,6 +12,7 @@ import Faqs from "./Faqs";
 import Cards from "./Cards";
 import Sponsors from "./Sponsors";
 import DevfolioButton from "./DevfolioButton";
+import Marquee from "./Marquee";
 
 const inter = Inter({ subsets: ["latin"] });
 const tiny = Tiny5({ subsets: ["latin", "greek"], weight: "400" });
@@ -196,6 +197,9 @@ export default function Home() {
 
       <div className="mt-20 md:mt-40"></div>
       <Sponsors />
+
+      <div className="mt-20 md:mt-40"></div>
+      <Marquee />
 
       <div className="mt-20 md:mt-40"></div>
       <Faqs />
