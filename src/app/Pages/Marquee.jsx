@@ -118,7 +118,7 @@ const Marquee = () => {
 
     return (
         <div
-            id="faqs"
+            id="community-partners"
             className="relative flex flex-col items-center min-h-auto mb-40 w-screen bg-center text-white z-60"
         >
 
