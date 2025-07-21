@@ -19,9 +19,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.11",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
     "tailwindcss": "^4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project, for college hackathon(IIIT kalyani StatusCode2) THis is deployed on our College's FTP server usig CI/CD pipeling",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

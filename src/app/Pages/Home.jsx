@@ -203,6 +203,7 @@ export default function Home() {
 
       <div className="mt-20 md:mt-40"></div>
       <Faqs />
+      <Marquee />
 
       <div className="mt-20 md:mt-40"></div>
       <Last />

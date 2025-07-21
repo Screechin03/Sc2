@@ -47,6 +47,7 @@ const Sponsors = () => {
     ];
 
     const diamondSponsors = [
+        { name: "GITHUB", logo: "/github.png" }
     ];
 
     const platinumSponsors = [
@@ -57,10 +58,14 @@ const Sponsors = () => {
 
     const goldSponsors = [
         { name: "ETHINDIA", logo: "/ethindia.png" },
+        { name: "ORKES", logo: "/orkess.png" }
 
     ];
 
     const silverSponsors = [
+        { name: "PEPVERSE", logo: "/pepverse.jpeg" },
+        { name: "Appwrite", logo: "/Appwrite.png" },
+        { name: "Interview Buddy", logo: "/interviewLogo.png" },
 
     ];
 

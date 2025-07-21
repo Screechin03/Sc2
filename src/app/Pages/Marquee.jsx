@@ -9,8 +9,9 @@ const Marquee = () => {
     // Data for marquee content - can be either logo+name or direct content image
     const dataUpper = [
         {
-            type: "content",
-            image: "/IEI.svg"
+            type: "logo+name",
+            logo: "/Anonymous Legion.png",
+            name: "Anonymous Legion"
         },
         {
             type: "logo+name",
@@ -23,61 +24,118 @@ const Marquee = () => {
             name: "DEV DOT COM"
         },
         {
-            type: "content",
-            image: "/IEI.svg"
-        },
-        {
-            type: "content",
-            image: "/IEI.svg"
-        },
-        {
-            type: "content",
-            image: "/IEI.svg"
-        },
-        {
-            type: "content",
-            image: "/IEI.svg"
-        },
-        {
-            type: "content",
-            image: "/IEI.svg"
-        },
-        {
-            type: "content",
-            image: "/IEI.svg"
-        },
-    ];
-    const dataLower = [
-        {
-            type: "content",
-            image: "/IEI.svg"
+            type: "logo+name",
+            logo: "/Apex_circle.jpg",
+            name: "Apex circle"
         },
 
         {
-            type: "content",
-            image: "/IEI.svg"
+            type: "logo+name",
+            logo: "/devhive_logo.jpg",
+            name: "Apex Devhive"
+        },
+        {
+            type: "logo+name",
+            logo: "/devsdungeon_logo.webp",
+            name: "Devs dungeon"
+        },
+        {
+            type: "logo+name",
+            logo: "/Digital_dominator_logo.webp",
+            name: "Digital dominator"
         },
         {
             type: "content",
-            image: "/IEI.svg"
+            image: "/Frame 387.png",
+
         },
         {
             type: "content",
-            image: "/IEI.svg"
+            image: "/Frame 388.png",
+
         },
         {
             type: "content",
-            image: "/IEI.svg"
+            image: "/Frame 389.png",
+
         },
         {
             type: "content",
-            image: "/IEI.svg"
+            image: "/Frame 390.png",
         },
         {
             type: "content",
-            image: "/IEI.svg"
+            image: "/Frame 390-1.png",
+
         },
+        {
+            type: "content",
+            image: "/Frame 389-1.png",
+
+        },
+        {
+            type: "content",
+            image: "/IEI.svg",
+        },
+
+    ];
+    const dataLower = [
+        {
+            type: "logo+name",
+            logo: "/innovatex_logo.jpg",
+            name: "Innovatex"
+        },
+        {
+            type: "logo+name",
+            logo: "/LNC logo.png",
+            name: "LNC"
+        },
+
+
+        {
+            type: "logo+name",
+            logo: "/Nexus of Nerds.png",
+            name: "Nexus of Nerds"
+        },
+        {
+            type: "logo+name",
+            logo: "/Postman_Kolkata.jpg",
+            name: "Postman Kolkata"
+        },
+        {
+            type: "logo+name",
+            logo: "/Repository_logo.png",
+            name: "Repository"
+        },
+        {
+            type: "logo+name",
+            logo: "/samarth logo white-1.png",
+            name: "Samarth"
+        },
+
+        {
+            type: "logo+name",
+            logo: "/Tech Defenders Logo.png",
+            name: "Tech Defenders"
+        },
+        {
+            type: "logo+name",
+            logo: "/the ascent circle logo.jpeg",
+            name: "The ascent circle "
+        },
+        {
+            type: "logo+name",
+            logo: "/The Code Bird (Logo).png",
+            name: "The Code Bird "
+        },
+        {
+            type: "logo+name",
+            logo: "/Webytes_logo.jpg",
+            name: "Webytes"
+        },
+
     ]
+    // Create a function to render marquee items
     const renderMarqueeItems = (data, avatar, avatarPosition = 'left') => (
         data.map((item, i) => (
             <div key={i} className="relative mx-8 flex-shrink-0">
@@ -87,7 +145,7 @@ const Marquee = () => {
                     className="w-44 h-44 md:w-86 md:h-86 object-contain"
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center p-4">
+                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-8">
                     {item.type === "logo+name" ? (
                         <div className="flex items-center space-x-2">
                             <img
@@ -103,7 +161,7 @@ const Marquee = () => {
                         <img
                             src={item.image}
                             alt="Partner Content"
-                            className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                            className="w-32 h-20 md:w-40 md:h-24 lg:w-44 lg:h-28 object-contain"
                         />
                     )}
                 </div>
@@ -118,7 +176,7 @@ const Marquee = () => {
 
     return (
         <div
-            id="community-partners"
+            id="faqs"
             className="relative flex flex-col items-center min-h-auto mb-40 w-screen bg-center text-white z-60"
         >
 
@@ -172,12 +230,12 @@ const Marquee = () => {
                 }
                 
                 .animate-marquee-rtl {
-                    animation: marquee-rtl 34s linear infinite;
+                    animation: marquee-rtl 40s linear infinite;
                     width: max-content;
                 }
                 
                 .animate-marquee-ltr {
-                    animation: marquee-ltr 34s linear infinite;
+                    animation: marquee-ltr 40s linear infinite;
                     width: max-content;
                 }
             `}</style>
