@@ -145,15 +145,15 @@ const Marquee = () => {
                     className="w-44 h-44 md:w-86 md:h-86 object-contain"
                 />
 
-                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-8">
+                <div className="absolute inset-0 flex items-center justify-center p-4 md:p-6">
                     {item.type === "logo+name" ? (
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center justify-center space-x-1 md:space-x-2 w-full h-full max-w-full">
                             <img
                                 src={item.logo}
                                 alt={item.name}
-                                className="w-10 h-10 md:w-14 md:h-14 object-contain"
+                                className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 object-contain flex-shrink-0"
                             />
-                            <span className="text-white font-medium lg:text-xl sm:text-xs md:text-base">
+                            <span className="text-white font-medium text-xs sm:text-sm md:text-base leading-tight truncate max-w-[70%]">
                                 {item.name}
                             </span>
                         </div>
@@ -161,7 +161,7 @@ const Marquee = () => {
                         <img
                             src={item.image}
                             alt="Partner Content"
-                            className="w-32 h-20 md:w-40 md:h-24 lg:w-44 lg:h-28 object-contain"
+                            className="w-24 h-14 md:w-28 md:h-16 lg:w-32 lg:h-18 object-contain max-w-full max-h-full"
                         />
                     )}
                 </div>
