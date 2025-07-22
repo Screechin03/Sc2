@@ -21,14 +21,25 @@ const SponsorFrame = ({ frameImage, sponsors, type }) => {
                             />
                         </div>
                     ) : (
-
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 w-[80%] px-2 mt-3">
+                        <div className={`
+                            ${sponsors.length === 2 ? 'flex justify-center items-center gap-8 w-[80%]' : 
+                              sponsors.length === 3 ? 'grid grid-cols-3 gap-4 w-[85%]' :
+                              sponsors.length === 4 ? 'grid grid-cols-2 md:grid-cols-4 gap-3 w-[90%]' :
+                              'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-[95%]'}
+                            px-2 mt-3
+                        `}>
                             {sponsors.map((sponsor, index) => (
-                                <div key={index} className="flex items-center justify-center">
+                                <div key={index} className="flex items-center justify-center p-2">
                                     <img
                                         src={sponsor.logo}
                                         alt={`${sponsor.name} LOGO`}
-                                        className="w-auto max-h-14 sm:max-h-12 md:max-h-20 object-fill"
+                                        className={`
+                                            w-auto object-contain
+                                            ${sponsors.length === 2 ? 'max-h-16 sm:max-h-20 md:max-h-24' :
+                                              sponsors.length === 3 ? 'max-h-12 sm:max-h-16 md:max-h-20' :
+                                              sponsors.length === 4 ? 'max-h-10 sm:max-h-14 md:max-h-18' :
+                                              'max-h-8 sm:max-h-12 md:max-h-16'}
+                                        `}
                                     />
                                 </div>
                             ))}
