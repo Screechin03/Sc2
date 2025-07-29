@@ -31,47 +31,42 @@ const Marquee = () => {
 
         {
             type: "logo+name",
-            logo: "/devhive_logo.jpg",
-            name: "Apex Devhive"
-        },
-        {
-            type: "logo+name",
             logo: "/devsdungeon_logo.webp",
             name: "Devs dungeon"
         },
+         {
+            type: "logo+name",
+            logo: "/FOF.png",
+            name: "FOF Kolkata"
+        },
         {
             type: "logo+name",
-            logo: "/Digital_dominator_logo.webp",
-            name: "Digital dominator"
+            logo: "/GDG.png",
+            name: "GDG IIITK"
         },
         {
-            type: "content",
-            image: "/Frame 387.png",
-
+            type: "logo+name",
+            logo: "/GDG.png",
+            name: "GDG GNIT"
         },
         {
-            type: "content",
-            image: "/Frame 388.png",
-
+            type: "logo+name",
+            logo: "/GDG.png",
+            name: "GDG JIS"
         },
         {
-            type: "content",
-            image: "/Frame 389.png",
-
+            type: "logo+name",
+            logo: "/GDG.png",
+            name: "GDG AOT"
         },
         {
-            type: "content",
-            image: "/Frame 390.png",
+            type: "logo+name",
+            logo: "/GDG.png",
+            name: "GDG GCELT"
         },
         {
             type: "content",
             image: "/Frame 390-1.png",
-
-        },
-        {
-            type: "content",
-            image: "/Frame 389-1.png",
-
         },
         {
             type: "content",
@@ -109,10 +104,19 @@ const Marquee = () => {
         },
         {
             type: "logo+name",
+            logo: "/Digital_dominator_logo.webp",
+            name: "Digital dominator"
+        },
+        {
+            type: "logo+name",
             logo: "/samarth logo white-1.png",
             name: "Samarth"
         },
-
+        {
+            type: "logo+name",
+            logo: "/devhive_logo.jpg",
+            name: "Apex Devhive"
+        },
         {
             type: "logo+name",
             logo: "/Tech Defenders Logo.png",
@@ -151,7 +155,7 @@ const Marquee = () => {
                             <img
                                 src={item.logo}
                                 alt={item.name}
-                                className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 object-contain flex-shrink-0"
+                                className={`w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 ${item.logo === "/FOF.png" ? "rounded-full" : ""}`}
                             />
                             <span className="text-white font-medium text-xs sm:text-sm md:text-base leading-tight truncate max-w-[70%]">
                                 {item.name}
