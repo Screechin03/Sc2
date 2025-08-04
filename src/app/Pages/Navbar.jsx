@@ -87,17 +87,25 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center px-6 md:px-4 lg:px-16 py-5">
         <div className="flex items-center">
-          {/* <a
+         <a
             href="https://hackathon.iiitkalyani.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
-          > */}
-          <img
-            src="/Vector.png"
-            alt="Status Code 2"
-            className="h-9 w-auto md:h-12 md:mr-3"
-          />
-          {/* </a> */}
+          > 
+          <div className="flex items-center gap-2 md:gap-3">
+            <img
+              src="/SC2.png"
+              alt="Status Code 2"
+              className="h-10 w-auto md:h-10"
+            />
+            <span className="text-white font-bold text-lg md:text-xl">×</span>
+            <img
+              src="/Vultr.png"
+              alt="Vultr"
+              className="h-8 w-auto md:h-8"
+            />
+          </div>
+         </a>
         </div>
         <div className="hidden md:flex flex-1 justify-center items-center text-white">
           <div className="flex justify-between md:gap-3 lg:gap-8 w-full max-w-3xl">

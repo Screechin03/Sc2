@@ -53,8 +53,7 @@ const SponsorFrame = ({ frameImage, sponsors, type }) => {
 const Sponsors = () => {
 
     const titleSponsors = [
-
-
+        { name: "VULTR", logo: "/Vultr.png" }
     ];
 
     const diamondSponsors = [

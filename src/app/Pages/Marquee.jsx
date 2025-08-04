@@ -23,10 +23,11 @@ const Marquee = () => {
             logo: "/Devdotcom.svg",
             name: "DEV DOT COM"
         },
+
         {
             type: "logo+name",
-            logo: "/Apex_circle.jpg",
-            name: "Apex circle"
+            logo: "/AWS.png",
+            name: "AWS LPU"
         },
 
         {
@@ -86,6 +87,11 @@ const Marquee = () => {
             name: "LNC"
         },
 
+        {
+            type: "logo+name",
+            logo: "/Apex_circle.jpg",
+            name: "Apex circle"
+        },
 
         {
             type: "logo+name",
@@ -155,7 +161,7 @@ const Marquee = () => {
                             <img
                                 src={item.logo}
                                 alt={item.name}
-                                className={`w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 ${item.logo === "/FOF.png" ? "rounded-full" : ""}`}
+                                className={`w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 ${item.logo === "/FOF.png" || item.logo === "/AWS.png" ? "rounded-full" : ""}`}
                             />
                             <span className="text-white font-medium text-xs sm:text-sm md:text-base leading-tight truncate max-w-[70%]">
                                 {item.name}
