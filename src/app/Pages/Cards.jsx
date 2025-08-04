@@ -28,9 +28,9 @@ const Cards = () => {
         { id: 1, front: <img src="/Test.svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
         { id: 2, front: <img src="/Test (1).svg" className="h-[632px] w-[180px]" />, back: <img src="/wild_mob.svg" className="h-[662px] w-[487px]" /> },
         { id: 3, front: <img src="/Test (2).svg" className="h-[632px] w-[180px]" />, back: <img src="/hard_mob.svg" className="h-[662px] w-[487px]" /> },
-        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/block_mob.svg" className="h-[662px] w-[487px]" /> },
-        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/edu_mob.svg" className="h-[662px] w-[487px]" /> },
-        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/Mobile tracks.svg" className="h-[662px] w-[487px]" /> },
+        { id: 4, front: <img src="/Test (3).svg" className="h-[632px] w-[180px]" />, back: <img src="/open_mob.svg" className="h-[662px] w-[487px]" /> },
+        { id: 5, front: <img src="/Test (4).svg" className="h-[632px] w-[180px]" />, back: <img src="/block_mob.svg" className="h-[662px] w-[487px]" /> },
+        { id: 6, front: <img src="/Test (5).svg" className="h-[632px] w-[180px]" />, back: <img src="/edu_mob.svg" className="h-[662px] w-[487px]" /> },
     ];
     const handleNext = () => {
         setAnimationClass("opacity-0 -translate-x-10");

@@ -96,13 +96,13 @@ const Navbar = () => {
             <img
               src="/SC2.png"
               alt="Status Code 2"
-              className="h-10 w-auto md:h-10"
+              className="h-8 w-auto md:h-10"
             />
             <span className="text-white font-bold text-lg md:text-xl">×</span>
             <img
               src="/Vultr.png"
               alt="Vultr"
-              className="h-8 w-auto md:h-8"
+              className="h-6 w-auto md:h-8"
             />
           </div>
          </a>
