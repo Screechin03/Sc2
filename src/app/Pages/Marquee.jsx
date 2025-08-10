@@ -31,6 +31,11 @@ const Marquee = () => {
         },
 
         {
+            type: "content",
+            image: "/ReactK.jpg",
+        },
+
+        {
             type: "logo+name",
             logo: "/devsdungeon_logo.webp",
             name: "Devs dungeon"
