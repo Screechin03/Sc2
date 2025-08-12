@@ -17,7 +17,10 @@ const SponsorFrame = ({ frameImage, sponsors, type }) => {
                             <img
                                 src={sponsors[0].logo}
                                 alt={`${sponsors[0].name} LOGO`}
-                                className="w-auto h-auto max-w-[50%] max-h-[35%] mt-5 object-contain"
+                                className={`w-auto h-auto object-contain mt-5 ${
+                                    type === 'venue' ? 'max-w-[15%] max-h-[15%]' : 
+                                    'max-w-[50%] max-h-[35%]'
+                                }`}
                             />
                         </div>
                     ) : (
@@ -80,6 +83,12 @@ const Sponsors = () => {
 
     ];
 
+    const venuePartner = [
+        { name: "IISER", logo: "/IISER.png" },
+
+
+    ];
+
     return (
         <div id="sponsors" className="min-h-auto w-auto flex flex-col items-center z-30 gap-40 sm:-mt-20 lg:-mt-10 overflow-hidden">
             <div className="relative mb-10 ">
@@ -97,6 +106,7 @@ const Sponsors = () => {
                 <SponsorFrame frameImage="/Frame 72.svg" sponsors={platinumSponsors} type="platinum" />
                 <SponsorFrame frameImage="/Frame 73.svg" sponsors={goldSponsors} type="gold" />
                 <SponsorFrame frameImage="/Frame 74.svg" sponsors={silverSponsors} type="silver" />
+                <SponsorFrame frameImage="/Frame 70.svg" sponsors={venuePartner} type="venue" />
             </div>
         </div>
     );

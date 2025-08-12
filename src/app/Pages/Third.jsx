@@ -12,8 +12,8 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold tracking-wider z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     12:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Reg Start" className="bottom-27 w-64 relative z-[3] mt-16" />
-                <img src="/Group 67.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 61.png" alt="Reg Start" className="bottom-27 w-64 relative z-[3] mt-16" />
+                
             </div>
         )
     },
@@ -27,8 +27,7 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     12:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Reg End" className="bottom-27  w-64 relative z-[3] mt-16" />
-                <img src="/Group 69.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 62.png" alt="Reg End" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
         )
     },
@@ -42,8 +41,7 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     11:00 AM
                 </p>
-                <img src="/land ghost.png" alt="Hack Start" className="bottom-27  w-64 relative z-[3] mt-16" />
-                <img src="/Group 68.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 63.png" alt="Hack Start" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
         )
     },
@@ -57,8 +55,7 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     11:00 PM
                 </p>
-                <img src="/land ghost.png" alt="Mid Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
-                <img src="/Group 70.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 64.png" alt="Mid Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
         )
     },
@@ -72,8 +69,7 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     04:00 PM
                 </p>
-                <img src="/land ghost.png" alt="Final Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
-                <img src="/Group 71.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 65.png" alt="Final Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
         )
     },
@@ -87,8 +83,7 @@ const slides = [
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
                     05:15 PM
                 </p>
-                <img src="/land ghost.png" alt="Closing" className="bottom-27  w-64 relative z-[3] mt-16" />
-                <img src="/Group 72.svg" className="text-red-500  absolute top-59 z-90 w-37" />
+                <img src="/Group 66.png" alt="Closing" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
         )
     }
