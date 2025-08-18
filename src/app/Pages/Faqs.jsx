@@ -26,22 +26,22 @@ const Faqs = () => {
       answer:
         "You should have basic knowledge of programming and a passion for hackathons.",
     },
-    {
-      question: "HOW DO I REGISTER?",
-      answer: (
-        <span>
-          Register your team @
-          <a
-            href="https://statuscode-2.devfolio.co/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#92DEFF] underline hover:text-blue-300"
-          >
-            Devfolio
-          </a>
-        </span>
-      ),
-    },
+    // {
+    //   question: "HOW DO I REGISTER?",
+    //   answer: (
+    //     <span>
+    //       Register your team @
+    //       <a
+    //         href="https://statuscode-2.devfolio.co/"
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //         className="text-[#92DEFF] underline hover:text-blue-300"
+    //       >
+    //         Devfolio
+    //       </a>
+    //     </span>
+    //   ),
+    // },
   ];
 
   return (

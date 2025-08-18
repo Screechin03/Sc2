@@ -36,13 +36,14 @@ const SponsorFrame = ({ frameImage, sponsors, type }) => {
                                     <img
                                         src={sponsor.logo}
                                         alt={`${sponsor.name} LOGO`}
-                                        className={`
-                                            w-auto object-contain
-                                            ${sponsors.length === 2 ? 'max-h-20 sm:max-h-24 md:max-h-28' :
-                                              sponsors.length === 3 ? 'max-h-12 sm:max-h-16 md:max-h-20' :
-                                              sponsors.length === 4 ? 'max-h-10 sm:max-h-14 md:max-h-18' :
-                                              'max-h-8 sm:max-h-12 md:max-h-16'}
-                                        `}
+                                                                                className={`
+                                                                                        w-auto object-contain
+                                                                                        ${type === 'diamond' ? 'max-h-32 sm:max-h-40 md:max-h-48' :
+                                                                                            sponsors.length === 2 ? 'max-h-20 sm:max-h-24 md:max-h-28' :
+                                                                                            sponsors.length === 3 ? 'max-h-12 sm:max-h-16 md:max-h-20' :
+                                                                                            sponsors.length === 4 ? 'max-h-10 sm:max-h-14 md:max-h-18' :
+                                                                                            'max-h-8 sm:max-h-12 md:max-h-16'}
+                                                                                `}
                                     />
                                 </div>
                             ))}
@@ -60,13 +61,13 @@ const Sponsors = () => {
     ];
 
     const diamondSponsors = [
-        { name: "GITHUB", logo: "/github.png" },
-        { name: "IDFC", logo: "/IDFC.jpg" }
+    { name: "GITHUB", logo: "/github.png" },
+    { name: "YES", logo: "/Yes.png" }
     ];
 
     const platinumSponsors = [
         { name: "DEVFOLIO", logo: "/devfolio.png" },
-
+        { name: "IDFC", logo: "/IDFC.jpg" },
 
     ];
 
