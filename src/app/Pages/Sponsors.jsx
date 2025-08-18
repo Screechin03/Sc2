@@ -27,7 +27,7 @@ const SponsorFrame = ({ frameImage, sponsors, type }) => {
                         <div className={`
                             ${sponsors.length === 2 ? 'flex justify-center items-center gap-8 w-[80%]' : 
                               sponsors.length === 3 ? 'grid grid-cols-3 gap-4 w-[85%]' :
-                              sponsors.length === 4 ? 'grid grid-cols-2 md:grid-cols-4 gap-3 w-[90%]' :
+                              sponsors.length === 4 ? 'grid grid-cols-4 gap-2 w-[85%]' :
                               'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 w-[95%]'}
                             px-2 mt-3
                         `}>
@@ -78,9 +78,10 @@ const Sponsors = () => {
     ];
 
     const silverSponsors = [
-        { name: "PEPVERSE", logo: "/pepverse.jpeg" },
-        { name: "Appwrite", logo: "/Appwrite.png" },
-        { name: "Interview Buddy", logo: "/interviewLogo.png" },
+    { name: "PEPVERSE", logo: "/pepverse.jpeg" },
+    { name: "Appwrite", logo: "/Appwrite.png" },
+    { name: "Interview Buddy", logo: "/interviewLogo.png" },
+    { name: "DEVREL", logo: "/Devrel.png" },
 
     ];
 

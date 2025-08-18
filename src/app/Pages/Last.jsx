@@ -136,7 +136,7 @@ const Last = () => {
               Sponsorship Brochure
             </a>
             <a
-              href="/hacker-guide.pdf"
+              href="https://geode-bus-697.notion.site/Status-Code-2-Hacker-Guide-1ffae59ad40f80509e4ce05c4bdc9bfb"
               target="_blank"
               className="hover:underline text-center"
             >
