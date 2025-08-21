@@ -216,7 +216,7 @@ const Navbar = () => {
             >
               SCHEDULE
             </p>
-            {/* <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p> */}
+            <p className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
             <p
               className="py-2 cursor-pointer hover:text-blue-300 transition-colors duration-300"
               onClick={() => scrollToSection("tracks")}
