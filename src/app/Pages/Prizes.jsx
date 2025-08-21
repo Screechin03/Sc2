@@ -84,7 +84,7 @@ const Prizes = () => {
           {/* Text overlay for second image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
             <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
-              ETHIndia Track{" "}
+              ETHIndia TRACK{" "}
               <span className="text-[#FE2F41] font-ticketing text-3xl">
                 {" "}
                 $100
@@ -105,7 +105,7 @@ const Prizes = () => {
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-5">
             <div className="flex flex-col w-full max-w-[480px]">
               <h3 className="text-white font-ticketing text-2xl leading-tight">
-                Best Use of Gemini API
+                BEST USE OF GEMINI API
               </h3>
               <p className="text-[10px] md:text-sm font-ticketing leading-snug mt-1 tracking-wide text-white">
                 <span className="text-[#FE2F41] font-semibold">Win Google Swags for best use of Gemini API</span>
@@ -125,7 +125,7 @@ const Prizes = () => {
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-5">
             <div className="flex flex-col w-full max-w-[480px]">
               <h3 className="text-white font-ticketing text-2xl leading-tight">
-                Best Use of MongoDB Atlas
+                BEST USE OF MongoDB ATLAS
               </h3>
               <p className="text-[10px] md:text-sm font-ticketing leading-snug mt-1 tracking-wide text-white">
               <span className="text-[#FE2F41] font-semibold">Win a M5GO IoT Starter Kit</span>
@@ -176,12 +176,27 @@ const Prizes = () => {
           {/* Text overlay for first image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
             <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
-              Quantitative finance track{" "}
+              QUANTITATIVE FINANCE TRACK{" "}
               <span className="text-[#FE2F41] font-ticketing text-3xl"> $50<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
 
+        {/* Second image with text overlay */}
+        <div className="relative">
+          <img
+            src="/Group.png"
+            alt="Trophy"
+            className="w-140 h-20 relative z-[3] object-contain"
+          />
+          {/* Text overlay for second image */}
+          <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
+              RISE TRACK{" "}
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $115<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
+            </span>
+          </div>
+        </div>
       </div>
       {/* Inclusive note */}
       <p className="mt-6 text-[10px] md:text-sm font-ticketing tracking-wide text-center text-white/80 max-w-3xl">
