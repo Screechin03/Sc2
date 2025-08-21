@@ -53,7 +53,7 @@ const slides = [
                     Aug 23
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
-                    11:00 PM
+                    10:00 PM
                 </p>
                 <img src="/Group 64.png" alt="Mid Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>
@@ -67,7 +67,7 @@ const slides = [
                     Aug 24
                 </h2>
                 <p className="text-2xl md:text-3xl font-bold z-[3] bg-gradient-to-r from-[#7BD7FF] to-[#C893FF] text-transparent bg-clip-text">
-                    04:00 PM
+                    02:00 PM
                 </p>
                 <img src="/Group 65.png" alt="Final Evaluation" className="bottom-27  w-64 relative z-[3] mt-16" />
             </div>

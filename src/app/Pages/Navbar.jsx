@@ -115,7 +115,7 @@ const Navbar = () => {
             >
               SCHEDULE
             </p>
-            {/* <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p> */}
+            <p className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300" onClick={() => scrollToSection("prizes")}>PRIZES</p>
             <p
               className="text-lg md:text-lg lg:text-xl cursor-pointer hover:text-blue-300 transition-colors duration-300"
               onClick={() => scrollToSection("tracks")}

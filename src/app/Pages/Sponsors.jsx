@@ -91,6 +91,12 @@ const Sponsors = () => {
 
     ];
 
+    const educationPartner = [
+        { name: "GFG", logo: "/GFG.png" },
+
+
+    ];
+
     return (
         <div id="sponsors" className="min-h-auto w-auto flex flex-col items-center z-30 gap-40 sm:-mt-20 lg:-mt-10 overflow-hidden">
             <div className="relative mb-10 ">
@@ -108,6 +114,7 @@ const Sponsors = () => {
                 <SponsorFrame frameImage="/Frame 72.svg" sponsors={platinumSponsors} type="platinum" />
                 <SponsorFrame frameImage="/Frame 73.svg" sponsors={goldSponsors} type="gold" />
                 <SponsorFrame frameImage="/Frame 74.svg" sponsors={silverSponsors} type="silver" />
+                <SponsorFrame frameImage="/Frame 76.png" sponsors={educationPartner} type="education" />
                 <SponsorFrame frameImage="/Frame 70.svg" sponsors={venuePartner} type="venue" />
             </div>
         </div>

@@ -21,8 +21,8 @@ const Prizes = () => {
       {/* Main Prizes Section */}
       <div className="hidden md:flex flex-row items-center justify-center gap-10 pt-40">
         <img
-          src="/Trophy 3.png"
-          alt="Trophy 3"
+          src="/Trophy 2.png"
+          alt="Trophy 2"
           className="w-100 h-100 relative z-[3]"
         />
         <img
@@ -31,8 +31,8 @@ const Prizes = () => {
           className="w-100 h-120 relative z-[3]"
         />
         <img
-          src="/Trophy 2.png"
-          alt="Trophy 2"
+          src="/Trophy 3.png"
+          alt="Trophy 3"
           className="w-100 h-100 relative z-[3]"
         />
       </div>
@@ -64,11 +64,11 @@ const Prizes = () => {
           />
           {/* Text overlay for first image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              BEST FRESHER TEAM{" "}
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
+              VULTR CLOUD DEPLOYMENT{" "}
               <span className="text-[#FE2F41] font-ticketing text-3xl">
                 {" "}
-                $120
+                $287
               </span>
             </span>
           </div>
@@ -83,11 +83,11 @@ const Prizes = () => {
           />
           {/* Text overlay for second image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              ALL GIRLS TEAM{" "}
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
+              ETHIndia Track{" "}
               <span className="text-[#FE2F41] font-ticketing text-3xl">
                 {" "}
-                $120
+                $100
               </span>
             </span>
           </div>
@@ -102,13 +102,50 @@ const Prizes = () => {
             className="w-140 h-20 relative z-[3] object-contain"
           />
           {/* Text overlay for first image */}
+          <div className="absolute inset-0 flex items-center justify-center z-[4] px-5">
+            <div className="flex flex-col w-full max-w-[480px]">
+              <h3 className="text-white font-ticketing text-2xl leading-tight">
+                Best Use of Gemini API
+              </h3>
+              <p className="text-[10px] md:text-sm font-ticketing leading-snug mt-1 tracking-wide text-white">
+                <span className="text-[#FE2F41] font-semibold">Win Google Swags for best use of Gemini API</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Second image with text overlay */}
+        <div className="relative">
+          <img
+            src="/Group.png"
+            alt="Trophy"
+            className="w-140 h-20 relative z-[3] object-contain"
+          />
+          {/* Text overlay for second image */}
+          <div className="absolute inset-0 flex items-center justify-center z-[4] px-5">
+            <div className="flex flex-col w-full max-w-[480px]">
+              <h3 className="text-white font-ticketing text-2xl leading-tight">
+                Best Use of MongoDB Atlas
+              </h3>
+              <p className="text-[10px] md:text-sm font-ticketing leading-snug mt-1 tracking-wide text-white">
+              <span className="text-[#FE2F41] font-semibold">Win a M5GO IoT Starter Kit</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10 pt-10">
+        <div className="relative">
+          <img
+            src="/Group.png"
+            alt="Trophy"
+            className="w-140 h-20 relative z-[3] object-contain"
+          />
+          {/* Text overlay for first image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
               BEST FRESHER TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $100<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
@@ -122,12 +159,9 @@ const Prizes = () => {
           />
           {/* Text overlay for second image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
               ALL GIRLS TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $100<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
@@ -141,73 +175,18 @@ const Prizes = () => {
           />
           {/* Text overlay for first image */}
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              BEST FRESHER TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
+            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
+              Quantitative finance track{" "}
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $50<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
 
-        {/* Second image with text overlay */}
-        <div className="relative">
-          <img
-            src="/Group.png"
-            alt="Trophy"
-            className="w-140 h-20 relative z-[3] object-contain"
-          />
-          {/* Text overlay for second image */}
-          <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              ALL GIRLS TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
-            </span>
-          </div>
-        </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 pt-10">
-        <div className="relative">
-          <img
-            src="/Group.png"
-            alt="Trophy"
-            className="w-140 h-20 relative z-[3] object-contain"
-          />
-          {/* Text overlay for first image */}
-          <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              BEST FRESHER TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
-            </span>
-          </div>
-        </div>
-
-        {/* Second image with text overlay */}
-        <div className="relative">
-          <img
-            src="/Group.png"
-            alt="Trophy"
-            className="w-140 h-20 relative z-[3] object-contain"
-          />
-          {/* Text overlay for second image */}
-          <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
-            <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[320px]">
-              ALL GIRLS TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl">
-                {" "}
-                $120
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+      {/* Inclusive note */}
+      <p className="mt-6 text-[10px] md:text-sm font-ticketing tracking-wide text-center text-white/80 max-w-3xl">
+        <span className="text-[#FE2F41]"><sup className="text-xs ml-0.5 relative -top-1">*</sup></span>Inclusive of ₹2000 cash + other swags and sponsor benefits
+      </p>
     </div>
   );
 };
