@@ -145,7 +145,7 @@ const Prizes = () => {
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
             <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
               BEST FRESHER TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl"> $100<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $150<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Prizes = () => {
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
             <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
               ALL GIRLS TEAM{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl"> $100<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> $150<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>
@@ -177,7 +177,7 @@ const Prizes = () => {
           <div className="absolute inset-0 flex items-center justify-center z-[4] px-4">
             <span className="text-white font-ticketing text-2xl flex justify-between w-full max-w-[400px]">
               QUANTITATIVE FINANCE TRACK{" "}
-              <span className="text-[#FE2F41] font-ticketing text-3xl"> $50<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
+              <span className="text-[#FE2F41] font-ticketing text-3xl"> ₹2000<sup className="text-xs ml-0.5 relative -top-3">*</sup></span>
             </span>
           </div>
         </div>

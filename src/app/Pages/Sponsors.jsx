@@ -73,7 +73,9 @@ const Sponsors = () => {
 
     const goldSponsors = [
         { name: "ETHINDIA", logo: "/ethindia.png" },
-        { name: "ORKES", logo: "/orkess.png" }
+        { name: "ORKES", logo: "/orkess.png" },
+        { name: "RISE", logo: "/Rise.jpeg" }
+
 
     ];
 
