@@ -52,12 +52,13 @@ const Second = () => {
                         animation: "zoom-pulse 2.5s infinite ease-in-out"
                     }}
                 >
-                    Hacking is Live!!
+                    Hacking is Ended!!
                 </h1>
                 <img src="ghibli.png" alt="Hacking is Live" className="lg:w-50  w-25 flex items-end" style={{
                     animation: "shake 0.7s infinite alternate ease-in-out"
                 }} />
                 <style jsx>{`
+
                 @keyframes shake {
                     0% { transform: translate(0, 0) rotate(0deg); }
                     20% { transform: translate(-4px, 2px) rotate(-2deg); }
@@ -71,7 +72,6 @@ const Second = () => {
             </div>
         );
     }
-
   return (
     <>
       <div
